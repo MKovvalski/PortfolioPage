@@ -1,1 +1,75 @@
 /*stylelint-disable*/
+
+// Mixins
+
+// bottom-arrow :after element
+
+@mixin bottom-arrow($selector, $top, $right, $border, $index, $color) {
+  &:#{$selector} {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: $top;
+    right: $right;
+    border-left: $border solid transparent;
+    border-right: $border solid transparent;
+    border-top: $border solid $color;
+    z-index: $index;
+  }
+}
+
+// section-title
+
+@mixin section-title ($font-size, $text-color, $text-shadow, $border) {
+  width: 120px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: $font-size;
+  color: $text-color;
+  text-shadow: $text-shadow;
+  border-bottom: $border;
+}
+
+// flex-box properties
+
+@mixin flex-box ($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// Animation mixins
+
+// -- mixin that adds rotation animation to element and state final position and angle of
+// said element
+
+@mixin onward-animation ($duration, $width, $trans-param-width, $trans-param-height, $rot-param) {
+  animation: rotate $duration linear 1 forwards;
+  @keyframes rotate {
+    100% {
+      width: $width;
+      transform: translate($trans-param-width, $trans-param-height) rotate($rot-param);
+    }
+  }
+}
+
+// -- mixin created to reverse effects of onwards-animation mixin. Allows to specify entry
+// positions and end positions
+
+@mixin backward-animation ($duration, $width-start, $width-end, $trans-param-width-start,
+                           $trans-param-height-start, $trans-param-width-end,
+                           $trans-param-height-end,$rot-param-start, $rot-param-end) {
+  animation: rotate-back $duration linear 1 forwards;
+  @keyframes rotate-back {
+    0% {
+      width: $width-start;
+      transform: translate($trans-param-width-start, $trans-param-height-start) rotate($rot-param-start);
+    }
+    100% {
+      width: $width-end;
+      transform: translate($trans-param-width-end, $trans-param-height-end) rotate($rot-param-end);
+    }
+  }
+}

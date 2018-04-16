@@ -2,28 +2,37 @@
 
 //parameters
 
-// primary-colors
+// Primary-colors
 $color-primary: #39CE98;
 $color-secondary: #FFD447;
 $color-tertiary: #595959;
 $color-container-background: #cccccc;
 $color-component-background: white;
 
-// font-colors
+// Font-colors
 $color-font-title: #595959;
 $color-font-subtitle: white;
 $color-font-text: #595959;
 $color-font-text-links: #333333;
 
-// font-sizes
+// Font-size
+$font-size-title: 1.6rem;
+$font-size-secondary-title: 1.3rem;
+$font-size-section-title: 1.3rem;
+$font-size-base-text: 1.2rem;
+$font-size-sub-text: 1rem;
+$font-size-project-text: 0.95rem;
 
+// Spacing
+$spacing-title: 2px;
+$spacing-secondary-title: 1px;
+$spacing-nav-elements: 1px;
 
-// borders
+// Border
 $border-subtitles: 4px solid $color-secondary;
-$border-projects-imgages: 2px solid #bababa;
+$border-projects-images: 2px solid #bababa;
 
-//shadows
-
+//Shadows
 $text-shadow: 1px 0 #bababa, 1.1px 0 black;
 $box-shadow-resting: 0px 13px 21px -7px rgba(0, 0, 0, 0.3);
 $box-shadow-hover: 0px 13px 21px -3px rgba(0, 0, 0, 0.3);
