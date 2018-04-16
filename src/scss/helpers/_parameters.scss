@@ -15,6 +15,8 @@ $color-font-subtitle: white;
 $color-font-text: #595959;
 $color-font-text-links: #333333;
 
+// font-sizes
+
 
 // borders
 $border-subtitles: 4px solid $color-secondary;
@@ -22,4 +24,6 @@ $border-projects-imgages: 2px solid #bababa;
 
 //shadows
 
-$font-shadow:
+$text-shadow: 1px 0 #bababa, 1.1px 0 black;
+$box-shadow-resting: 0px 13px 21px -7px rgba(0, 0, 0, 0.3);
+$box-shadow-hover: 0px 13px 21px -3px rgba(0, 0, 0, 0.3);
