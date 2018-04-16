@@ -5,7 +5,162 @@
   <link rel="stylesheet" href="css/app.css" />
 </head>
 <body>
-  <div id="app"></div>
+<div class = "container">
+
+  <!-------- Header -------->
+
+  <header class = "main-header">
+    <div class = "title">
+      <h1>Matuesz Kowalski</h1>
+      <h2>Junior Front-End Developer</h2>
+    </div>
+    <div class = "menu-hamburger">
+      <svg class = "menu-burger-line first"></svg>
+      <div class = "menu-burger-line-wrapper">
+        <div class = "menu-burger-small-line small-first"></div>
+        <div class = "menu-burger-small-line small-second"></div>
+      </div>
+      <svg class = "menu-burger-line third"></svg>
+    </div>
+    <nav class = "main-nav">
+      <ul class = "menu-list">
+        <li>
+          <h3 class = "header-about">About me</h3>
+          <div class = "underline"></div>
+        </li>
+        <li>
+          <h3 class = "header-skills">Skills</h3>
+          <div class = "underline"></div>
+        </li>
+        <li>
+          <h3 class = "header-projects">Projects</h3>
+          <div class = "underline"></div>
+        </li>
+        <li>
+          <h3 class = "header-contact">Contact</h3>
+          <div class = "underline"></div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!------- Mobile Nav ----->
+
+  <nav class = "main-nav-mobile">
+    <ul class = "menu-list-mobile">
+      <li class = "header-mobile-about">
+        About Me
+      </li>
+      <li class = "header-mobile-skills">
+        Skills
+      </li>
+      <li class = "header-mobile-projects">
+        Projects
+      </li>
+      <li class = "header-mobile-contact">
+        Contact
+      </li>
+    </ul>
+  </nav>
+
+  <!------- About Me ------->
+
+  <section class = "main-about" id = "about">
+    <div class = "about">
+      <article class = "short-description">
+        <h2 class = "article-title">about me</h2>
+        <p>Hello! My name is Mateusz and I am an enterprise management graduate from Warsaw, who currently works as a event manager. I enjoy facing projects that challenge me and force progress on me. When writing code, I focus on creating solutions that may not be the simplest to understand but solve problem in most elegant and maintainable way. </p>
+      </article>
+      <div class = "main-traits">
+        <div class = "trait">
+          <h3>team player</h3>
+          <p>Years spent as a part of sports team as well as working in a event management taught me how to easily cooperate and communicate with a team I work in.</p>
+        </div>
+        <div class = "trait">
+          <h3>keen to progress</h3>
+          <p>My main objective is to keep refining the skills I have and to acquire new ones. I do well learning on my own but excel the most under skilled supervisor</p>
+        </div>
+        <div class = "trait">
+          <h3>diversified experience</h3>
+          <p>Education in enterprise management and work as a event manager allowed me to get to know basics of many project management techniques and frameworks</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------- Skills --------->
+
+  <section class = "main-skills" id = "skills">
+    <h2 class = "section-title">Skills</h2>
+    <ul class = "skill-list">
+      <li class = "html"></li>
+      <li class = "sass"></li>
+      <li class = "js"></li>
+      <li class = "react"></li>
+      <li class = "redux"></li>
+      <li class = "webpack"></li>
+      <li class = "git"></li>
+    </ul>
+    <div class = "main-skill-text">
+      <p>Knowing that it would be hard to asses skills of someone who has no commercial experience, I work daily on my own projects, to make the assessment easier.</p>
+      <p>I prefer to write my projects in React Framework, which I supplement with Redux when necessary. All styling is done in Sass, while Webpack bundles everything together.</p>
+      <p>When writing code I focus on keeping it clean and easy to maintain. Everyday I strive to better my writing as well as learn new techniques and tricks. To learn more about my code visit my
+        <a class = "skill-github-link" target = "_blank" href= "http://github.com/MateuszKowalskiCL">github</a></p>
+    </div>
+  </section>
+
+  <!------- Projects ------->
+
+  <section class = "main-projects" id = "projects">
+    <article class = "project">
+      <h3>Pokemon Game</h3>
+      <a href="https://mateuszkowalskicl.github.io/PokemonGame-simplified/" target = "_blank">
+        <img src="./imgs/Logo%20Pokemon.png" alt="">
+      </a>
+      <div class = "link-wrapper">
+        <a class = "github-link" href="https://github.com/MateuszKowalskiCL/PokemonGame-simplified" target = "_blank">View the <span>code</span></a>
+      </div>
+      <p>My first serious project build in React with support of Redux. Game features precisely recreated battle mechanics.</p>
+    </article>
+    <article class = "project">
+      <h3>Portfolio Page</h3>
+      <a href="https://mateuszkowalskicl.github.io/portfolioPage/" target = "_blank">
+        <img src="./imgs/portfolio.png" alt="">
+      </a>
+      <div class = "link-wrapper">
+        <a class = "github-link" href="https://github.com/MateuszKowalskiCL/portfolioPage" target = "_blank">View the <span>code</span></a>
+      </div>
+      <p>Website utilizes interesting mechanics of moving around its contents as well as one of my first loading animations.</p>
+    </article>
+    <article class = "project">
+      <h3>Sit on chair</h3>
+      <a href="https://mateuszkowalskicl.github.io/sitOnChairPrime/" target = "_blank">
+        <img src="./imgs/tile.png" alt="">
+      </a>
+      <div class = "link-wrapper">
+        <a class = "github-link" href="https://github.com/MateuszKowalskiCL/sitOnChairPrime" target = "_blank">View the <span>code</span></a>
+      </div>
+      <p>Developed through first half of Coders Lab Boot Camp. Build without frameworks or additional libraries</p>
+    </article>
+  </section>
+
+  <!------- Contact -------->
+
+  <footer class = "main-footer" id = "contact">
+    <h4 class = "footer-title">© 2018 By Mateusz Kowalski. All rights reserved.</h4>
+    <ul class = "contact-list">
+      <li class = "contact-logo gmail">
+        <div class = "mail-expander">
+          <div class = "mail-logo-doubler">
+            <div class = "mail">matt.kowalski.public@gmail.com</div>
+          </div>
+        </div>
+      </li>
+      <li><a target = "_blank" href="http://www.linkedin.com/in/mateusz-kowalski-62b758113/"><div class = "contact-logo linkedin"></div></a></li>
+      <li><a target = "_blank" href="http://github.com/MateuszKowalskiCL"><div class = "contact-logo github"></div></a></li>
+    </ul>
+  </footer>
+</div>
   <script src="js/app.js"></script>
 </body>
 </html>

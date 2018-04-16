@@ -72,10 +72,6 @@
 
 __webpack_require__(1);
 
-var appContainer = document.querySelector('#app');
-
-appContainer.innerHTML = '<div class="main-component"><h1 class="main-component__title">Welcome!</h1></div>';
-
 /***/ }),
 /* 1 */
 /***/ (function(module, exports) {

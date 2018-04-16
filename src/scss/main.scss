@@ -1,19 +1,16 @@
 /*stylelint-disable*/
 
-/** postcss-bem-linter: define main-component; weak */
-$color: #555;
+//helpers
 
-.main-component {
-  &__title {
-    color: $color;
-  }
-}
+@import "helpers/functions.scss";
+@import "helpers/mixins.scss";
+@import "helpers/parameters.scss";
+@import "helpers/reset.scss";
 
-/** postcss-bem-linter: define utilities */
-.u-ellipsis {
-  color: $color;
-}
+//layouts
 
-body {
-  background-color: green;
-}
+@import "layouts/header.scss";
+@import "layouts/about.scss";
+@import "layouts/skills.scss";
+@import "layouts/projects.scss";
+@import "layouts/footer.scss";
