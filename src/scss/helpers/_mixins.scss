@@ -40,6 +40,22 @@
   align-items: $align;
 }
 
+// media mixin
+
+// -- disclaimer! I do not create this function - credit to http://thesassway.com/intermediate/responsive-web-design-part-2;
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media only screen and (min-width: 330px) and (max-width: 480px) { @content; }
+  }
+  @else if $media == tablets {
+    @media only screen and (min-width: 481px) and (max-width: 1024px) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: 1024px) { @content; }
+  }
+}
+
+
 // Animation mixins
 
 // -- mixin that adds rotation animation to element and state final position and angle of

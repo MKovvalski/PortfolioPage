@@ -1,0 +1,19 @@
+/*stylelint-disable*/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $Open-sans;
+
+}
+
+.container {
+  width: 100%;
+  background-color: $color-container-background;
+  margin: 0 auto;
+  @include flex-box(column, center, center);
+}
+
+

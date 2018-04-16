@@ -1,0 +1,22 @@
+/*stylelint-disable*/
+
+.menu-hamburger {
+  display: none;
+}
+
+.main-header {
+  background-color: $color-primary;
+  width: 90%;
+  max-width: 1024px;
+  position: relative;
+  @include flex-box(row, space-between, center);
+  @include bottom-arrow(after, 100%, 50%, 30px, 1, $color-primary);
+}
+
+.main-nav {
+  width: 44%;
+  ul {
+    margin-right: 25px;
+    @include flex-box(row, space-between, center);
+  }
+}
