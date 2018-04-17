@@ -226,10 +226,10 @@ input[type=button] {
   display: none; }
 
 .main-header {
-  background-color: #39CE98;
   width: 90%;
   max-width: 1024px;
   position: relative;
+  background-color: #39CE98;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,7 +267,7 @@ input[type=button] {
   text-shadow: 1px 0 white, 1.1px 0 black; }
 
 .position {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 1px;
   color: white;
@@ -294,7 +294,7 @@ input[type=button] {
 
 .nav-title {
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 1px;
   color: white;
@@ -306,10 +306,10 @@ input[type=button] {
 
 /*stylelint-disable*/
 .main-about {
-  background-color: white;
   width: 90%;
   max-width: 1024px;
   position: relative;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,15 +347,27 @@ input[type=button] {
     z-index: 2; }
 
 .short-description {
-  width: 40%; }
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .article-title {
-  margin-left: 35%;
   width: 100%;
   width: 120px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #333333;
   text-shadow: 1px 0 #bababa, 1.1px 0 black;
   border-bottom: 4px solid #FFD447; }
@@ -364,7 +376,7 @@ input[type=button] {
   text-align: center;
   margin-top: 10px;
   color: #595959;
-  font-size: 1.2rem; }
+  font-size: 1.3rem; }
 
 .main-traits {
   width: 40%;
@@ -390,7 +402,7 @@ input[type=button] {
 
 .trait-title {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 1px;
   color: #333333;
@@ -401,9 +413,10 @@ input[type=button] {
 
 /*stylelint-disable*/
 .main-skills {
-  background-color: white;
   width: 90%;
   max-width: 1024px;
+  position: relative;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,7 +430,7 @@ input[type=button] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .main-skills:after {
+  .main-skills:before {
     position: absolute;
     content: "";
     width: 0;
@@ -426,17 +439,133 @@ input[type=button] {
     right: 47.2%;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
-    border-top: 30px solid #39CE98;
+    border-top: 30px solid white;
     z-index: 1; }
 
 .section-title {
+  margin-top: 50px;
   width: 120px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #333333;
   text-shadow: 1px 0 #bababa, 1.1px 0 black;
   border-bottom: 4px solid #FFD447; }
+
+.skill-list {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .skill-list li {
+    width: 60px;
+    height: 60px;
+    border: 1px solid red;
+    background-color: #FFD447; }
+
+.main-skill-text {
+  text-align: center;
+  width: 45%;
+  margin-top: 30px;
+  margin-bottom: 40px; }
+
+.main-skill-text-paragraph {
+  font-size: 1.3rem;
+  color: #595959;
+  margin-bottom: 25px; }
+
+.skill-github-link {
+  color: #333333;
+  font-weight: 700;
+  text-decoration: none; }
+
+/*stylelint-disable*/
+.main-projects {
+  width: 90%;
+  max-width: 1024px;
+  position: relative;
+  background-color: #FFD447; }
+  .main-projects:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 100%;
+    right: 47.2%;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #FFD447;
+    z-index: 1; }
+
+.project-wrapper {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.project {
+  width: 27%;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 13px 21px -7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 13px 21px -7px rgba(0, 0, 0, 0.3); }
+
+.project-title {
+  line-height: 43px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  background-color: #39CE98;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: white;
+  text-shadow: 1px 0 #bababa, 1.1px 0 black; }
+
+.project-peek {
+  width: 100%;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top: 2px solid #bababa;
+  border-bottom: 2px solid #bababa; }
+
+.project-github-link {
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #595959; }
+  .project-github-link span {
+    font-weight: 900;
+    color: #333333; }
+
+.project-description {
+  width: 90%;
+  min-height: 130px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #595959;
+  font-size: 1.1rem; }
 
 /*stylelint-disable*/
 html {

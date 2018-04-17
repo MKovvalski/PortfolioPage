@@ -1,15 +1,46 @@
 /*stylelint-disable*/
 
 .main-skills {
-  background-color: $color-component-background;
-  width: 90%;
-  max-width: 1024px;
+  @include component-container($color-component-background);
   @include flex-box(column, center, center);
-  @include bottom-arrow(after, 100%, 47.2%, 30px, 1, $color-primary);
+  @include bottom-arrow(before, 100%, 47.2%, 30px, 1, $color-component-background);
 }
 
 .section-title {
+  margin-top: 50px;
   @include section-title($font-size-section-title, $color-font-text-links, $text-shadow, $border-subtitles);
 }
+
+.skill-list {
+  margin-top: 20px;
+  @include flex-box(row, center, center);
+  li {
+    width: 60px;
+    height: 60px;
+    border: 1px solid red;
+    background-color: #FFD447;
+  }
+}
+
+.main-skill-text {
+  text-align: center;
+  width: 45%;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.main-skill-text-paragraph {
+  font-size: $font-size-base-text;
+  color: $color-font-text;
+  margin-bottom: 25px;
+}
+
+.skill-github-link {
+  color: $color-font-text-links;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
 
 

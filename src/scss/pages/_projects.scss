@@ -1,0 +1,56 @@
+/*stylelint-disable*/
+
+.main-projects {
+  @include component-container($color-secondary);
+  @include bottom-arrow(before, 100%, 47.2%, 30px, 1, $color-secondary);
+}
+
+.project-wrapper {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  @include flex-box(row, space-around, center);
+}
+
+.project {
+  width: 27%;
+  background-color: $color-component-background;
+  border-radius: 5px;
+  box-shadow: $box-shadow-resting;
+}
+
+.project-title {
+  line-height: 43px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  background-color: $color-primary;
+  @include header-titles($font-size-base-text, 500, $spacing-subtitle, $color-font-subtitle, $text-shadow);
+}
+
+.project-peek {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-top: $border-projects-images;
+  border-bottom: $border-projects-images;
+}
+
+.project-github-link {
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: $font-size-sub-text;
+  color: $color-font-text;
+  span {
+    font-weight: 900;
+    color: $color-font-text-links;
+  }
+}
+
+.project-description {
+  width: 90%;
+  min-height: 130px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: $color-font-text;
+  font-size: $font-size-sub-text;
+}

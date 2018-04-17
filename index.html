@@ -90,9 +90,9 @@
       <li class = "git"></li>
     </ul>
     <div class = "main-skill-text">
-      <p>Knowing that it would be hard to asses skills of someone who has no commercial experience, I work daily on my own projects, to make the assessment easier.</p>
-      <p>I prefer to write my projects in React Framework, which I supplement with Redux when necessary. All styling is done in Sass, while Webpack bundles everything together.</p>
-      <p>When writing code I focus on keeping it clean and easy to maintain. Everyday I strive to better my writing as well as learn new techniques and tricks. To learn more about my code visit my
+      <p class = "main-skill-text-paragraph">Knowing that it would be hard to asses skills of someone who has no commercial experience, I work daily on my own projects, to make the assessment easier.</p>
+      <p class = "main-skill-text-paragraph">I prefer to write my projects in React Framework, which I supplement with Redux when necessary. All styling is done in Sass, while Webpack bundles everything together.</p>
+      <p class = "main-skill-text-paragraph">When writing code I focus on keeping it clean and easy to maintain. Everyday I strive to better my writing as well as learn new techniques and tricks. To learn more about my code visit my
         <a class = "skill-github-link" target = "_blank" href= "http://github.com/MateuszKowalskiCL">github</a></p>
     </div>
   </section>
@@ -100,36 +100,32 @@
   <!------- Projects ------->
 
   <section class = "main-projects" id = "projects">
-    <article class = "project">
-      <h3>Pokemon Game</h3>
-      <a href="https://mateuszkowalskicl.github.io/PokemonGame-simplified/" target = "_blank">
-        <img src="./imgs/Logo%20Pokemon.png" alt="">
-      </a>
-      <div class = "link-wrapper">
-        <a class = "github-link" href="https://github.com/MateuszKowalskiCL/PokemonGame-simplified" target = "_blank">View the <span>code</span></a>
-      </div>
-      <p>My first serious project build in React with support of Redux. Game features precisely recreated battle mechanics.</p>
-    </article>
-    <article class = "project">
-      <h3>Portfolio Page</h3>
-      <a href="https://mateuszkowalskicl.github.io/portfolioPage/" target = "_blank">
-        <img src="./imgs/portfolio.png" alt="">
-      </a>
-      <div class = "link-wrapper">
-        <a class = "github-link" href="https://github.com/MateuszKowalskiCL/portfolioPage" target = "_blank">View the <span>code</span></a>
-      </div>
-      <p>Website utilizes interesting mechanics of moving around its contents as well as one of my first loading animations.</p>
-    </article>
-    <article class = "project">
-      <h3>Sit on chair</h3>
-      <a href="https://mateuszkowalskicl.github.io/sitOnChairPrime/" target = "_blank">
-        <img src="./imgs/tile.png" alt="">
-      </a>
-      <div class = "link-wrapper">
-        <a class = "github-link" href="https://github.com/MateuszKowalskiCL/sitOnChairPrime" target = "_blank">View the <span>code</span></a>
-      </div>
-      <p>Developed through first half of Coders Lab Boot Camp. Build without frameworks or additional libraries</p>
-    </article>
+    <div class = "project-wrapper">
+      <article class = "project">
+          <h3 class = "project-title">Pokemon Game</h3>
+          <a href="https://mateuszkowalskicl.github.io/PokemonGame-simplified/" target = "_blank">
+            <img class = "project-peek" src="./src/imgs/Logo-Pokemon.png" alt="">
+          </a>
+          <a class = "project-github-link" href="https://github.com/MateuszKowalskiCL/PokemonGame-simplified" target = "_blank">View the <span>code</span></a>
+          <p class = "project-description">My first serious project build in React with support of Redux. Game features precisely recreated battle mechanics.</p>
+      </article>
+      <article class = "project">
+          <h3 class = "project-title">Portfolio Page</h3>
+          <a href="https://mateuszkowalskicl.github.io/portfolioPage/" target = "_blank">
+            <img class = "project-peek" src="./src/imgs/portfolio.png" alt="">
+          </a>
+          <a class = "project-github-link" href="https://github.com/MateuszKowalskiCL/portfolioPage" target = "_blank">View the <span>code</span></a>
+          <p class = "project-description">Website utilizes interesting mechanics of moving around its contents as well as one of my first loading animations.</p>
+      </article>
+      <article class = "project">
+          <h3 class = "project-title">Sit on chair</h3>
+          <a href="https://mateuszkowalskicl.github.io/sitOnChairPrime/" target = "_blank">
+            <img class = "project-peek" src="./src/imgs/tile.png" alt="">
+          </a>
+          <a class = "project-github-link" href="https://github.com/MateuszKowalskiCL/sitOnChairPrime" target = "_blank">View the <span>code</span></a>
+          <p class = "project-description">Developed through first half of Coders Lab Boot Camp. Build without frameworks or additional libraries</p>
+      </article>
+    </div>
   </section>
 
   <!------- Contact -------->

@@ -2,6 +2,15 @@
 
 // Mixins
 
+// main-element
+
+@mixin component-container ($background-color) {
+  width: 90%;
+  max-width: 1024px;
+  position: relative;
+  background-color: $background-color;
+}
+
 // bottom-arrow :after element
 
 @mixin bottom-arrow($selector, $top, $right, $border, $index, $color) {
@@ -19,7 +28,7 @@
   }
 }
 
-// section-title
+// header-title
 
 @mixin header-titles ($font-size, $font-weight, $letter-spacing, $color, $text-shadow) {
   font-size: $font-size;
@@ -28,6 +37,8 @@
   color: $color;
   text-shadow: $text-shadow;
 }
+
+// section-title
 
 @mixin section-title ($font-size, $text-color, $text-shadow, $border) {
   width: 120px;
