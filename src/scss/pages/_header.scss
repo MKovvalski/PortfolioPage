@@ -10,13 +10,32 @@
   max-width: 1024px;
   position: relative;
   @include flex-box(row, space-between, center);
-  @include bottom-arrow(after, 100%, 50%, 30px, 1, $color-primary);
+  @include bottom-arrow(after, 100%, 47.2%, 30px, 1, $color-primary);
+}
+
+.title {
+  margin: 25px 0 25px 20px;
+  text-transform: uppercase;
+}
+
+.name-and-surname {
+  @include header-titles($font-size-title, 900, $spacing-title, $color-font-title, $text-shadow-main-title);
+}
+
+.position {
+  @include header-titles($font-size-secondary-title, 600, $spacing-secondary-title, $color-font-subtitle, $text-shadow);
 }
 
 .main-nav {
   width: 44%;
-  ul {
-    margin-right: 25px;
-    @include flex-box(row, space-between, center);
-  }
+}
+
+.menu-list {
+  margin-right: 25px;
+  @include flex-box(row, space-between, center);
+}
+
+.nav-title {
+  text-transform: uppercase;
+  @include header-titles($font-size-base-text, 700, $spacing-nav-elements, $color-font-subtitle, $text-shadow);
 }

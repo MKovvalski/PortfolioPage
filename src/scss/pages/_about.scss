@@ -1,0 +1,25 @@
+/*stylelint-disable*/
+
+.main-about {
+  background-color: $color-component-background;
+  width: 90%;
+  max-width: 1024px;
+  position: relative;
+  @include flex-box(row, space-around, center);
+  @include bottom-arrow(after, 100%, 47.2%, 30px, 1, $color-primary);
+  @include bottom-arrow(before, 98%, 47.2%, 30px, 2, $color-component-background);
+  border-bottom: 4px solid $color-primary;
+}
+
+.short-description {
+  width: 40%;
+}
+
+.article-title {
+  width: 100%;
+  @include section-title($font-size-section-title, $color-font-title, $text-shadow, $border-subtitles)
+}
+
+.main-traits {
+  width: 50%;
+}

@@ -21,8 +21,16 @@
 
 // section-title
 
+@mixin header-titles ($font-size, $font-weight, $letter-spacing, $color, $text-shadow) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  letter-spacing: $letter-spacing;
+  color: $color;
+  text-shadow: $text-shadow;
+}
+
 @mixin section-title ($font-size, $text-color, $text-shadow, $border) {
-  width: 120px;
+  width: 100%;
   text-align: center;
   text-transform: uppercase;
   font-size: $font-size;
