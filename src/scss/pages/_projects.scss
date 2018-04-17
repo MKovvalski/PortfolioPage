@@ -8,7 +8,7 @@
 .project-wrapper {
   margin-top: 50px;
   margin-bottom: 60px;
-  @include flex-box(row, space-around, center);
+  @include flex-box(row, space-around, flex-start);
 }
 
 .project {

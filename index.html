@@ -12,24 +12,25 @@
   <!-------- Header -------->
 
   <header class = "main-header">
-    <div class = "title">
+    <a href = "/" class = "title">
       <h1 class = "name-and-surname">Matuesz Kowalski</h1>
       <h2 class = "position">Junior Front-End Developer</h2>
-    </div>
-    <div class = "menu-hamburger">
-      <svg class = "menu-burger-line first"></svg>
+    </a>
+    <div class = "menu-hamburger"> <!--burger menu for mobile -->
+      <div class = "visually-hidden">menu</div>
+      <div class = "menu-burger-line first"></div>
       <div class = "menu-burger-line-wrapper">
         <div class = "menu-burger-small-line small-first"></div>
         <div class = "menu-burger-small-line small-second"></div>
       </div>
-      <svg class = "menu-burger-line third"></svg>
+      <div class = "menu-burger-line third"></div>
     </div>
     <nav class = "main-nav">
       <ul class = "menu-list">
-        <li class = "nav-title header-about">About me</li>
-        <li class = "nav-title header-skills">Skills</li>
-        <li class = "nav-title header-projects">Projects</li>
-        <li class = "nav-title header-contact">Contact</li>
+        <li class = "nav-title header-about"><a href="">About me</a></li>
+        <li class = "nav-title header-skills"><a href="">Skills</a></li>
+        <li class = "nav-title header-projects"><a href="">Projects</a></li>
+        <li class = "nav-title header-contact"><a href="">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -81,13 +82,13 @@
   <section class = "main-skills" id = "skills">
     <h2 class = "section-title">Skills</h2>
     <ul class = "skill-list">
-      <li class = "html"></li>
-      <li class = "sass"></li>
-      <li class = "js"></li>
-      <li class = "react"></li>
-      <li class = "redux"></li>
-      <li class = "webpack"></li>
-      <li class = "git"></li>
+      <li class = "html"><span class = "visually-hidden">html</span></li>
+      <li class = "sass"><span class = "visually-hidden">sass</span></li>
+      <li class = "js"><span class = "visually-hidden">js</span></li>
+      <li class = "react"><span class = "visually-hidden">react</span></li>
+      <li class = "redux"><span class = "visually-hidden">redux</span></li>
+      <li class = "webpack"><span class = "visually-hidden">webpack</span></li>
+      <li class = "git"><span class = "visually-hidden">git</span></li>
     </ul>
     <div class = "main-skill-text">
       <p class = "main-skill-text-paragraph">Knowing that it would be hard to asses skills of someone who has no commercial experience, I work daily on my own projects, to make the assessment easier.</p>
@@ -131,19 +132,20 @@
   <!------- Contact -------->
 
   <footer class = "main-footer" id = "contact">
-    <h4 class = "footer-title">© 2018 By Mateusz Kowalski. All rights reserved.</h4>
+    <small class = "footer-title">© 2018 By Mateusz Kowalski. All rights reserved.</small>
     <ul class = "contact-list">
       <li class = "contact-logo gmail">
-        <div class = "mail-expander">
+        <a href = "" class = "mail-expander">
           <div class = "mail-logo-doubler">
             <div class = "mail">matt.kowalski.public@gmail.com</div>
           </div>
-        </div>
+        </a>
       </li>
-      <li><a target = "_blank" href="http://www.linkedin.com/in/mateusz-kowalski-62b758113/"><div class = "contact-logo linkedin"></div></a></li>
-      <li><a target = "_blank" href="http://github.com/MateuszKowalskiCL"><div class = "contact-logo github"></div></a></li>
+      <li><a target = "_blank" href="http://www.linkedin.com/in/mateusz-kowalski-62b758113/"><div class = "contact-logo linkedin"></div><span class = "visually-hidden">linkedin</span></a></li>
+      <li><a target = "_blank" href="http://github.com/MateuszKowalskiCL"><div class = "contact-logo github"></div><span class = "visually-hidden">github</span></a></li>
     </ul>
   </footer>
+
 </div>
   <script src="js/app.js"></script>
 </body>

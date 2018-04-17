@@ -1,0 +1,74 @@
+/*stylelint-disable*/
+
+.main-footer {
+  @include component-container($color-tertiary);
+  @include flex-box(column, center, center);
+}
+
+.footer-title {
+  margin-top: 40px;
+  @include header-titles($font-size-footer-text, 500, $spacing-subtitle, #bababa, none);
+}
+
+.contact-list {
+  width: 35%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  @include flex-box(row, space-between, center);
+}
+
+.contact-logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.gmail {
+  transition: all 0.3s ease-out;
+  //background-image: url("../../imgs/tile.png");
+  //background-size: 100% 100%;
+  //background-repeat: no-repeat;
+  //background-position: center;
+}
+
+.mail-expander {
+  display: none;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.mail-logo-doubler {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  //background-image: url("../../imgs/gmail-logo.png");
+  //background-size: 100% 100%;
+  //background-repeat: no-repeat;
+  //background-position: center;
+}
+
+.mail {
+  position: absolute;
+  top: 8.5px;
+  left: 47px;
+  display: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: $color-font-text-links;
+}
+
+.linkedin {
+  background-image: url("../../imgs/linkedin-logo.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.github {
+  background-image: url("../../imgs/github-logo-2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+

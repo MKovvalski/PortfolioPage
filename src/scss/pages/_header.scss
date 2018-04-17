@@ -13,6 +13,7 @@
 .title {
   margin: 25px 0 25px 20px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .name-and-surname {
@@ -32,7 +33,8 @@
   @include flex-box(row, space-between, center);
 }
 
-.nav-title {
+.nav-title a {
+  text-decoration: none;
   text-transform: uppercase;
   @include header-titles($font-size-base-text, 700, $spacing-nav-elements, $color-font-subtitle, $text-shadow);
 }
