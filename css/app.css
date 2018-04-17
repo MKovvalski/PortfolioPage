@@ -2,6 +2,18 @@
 /*stylelint-disable*/
 /*stylelint-disable*/
 /*stylelint-disable*/
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+
+	Eric Meyer					:: http://meyerweb.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+
+-------------------------------------------------------------------------------*/
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
   margin: 0;
   padding: 0;
@@ -327,7 +339,7 @@ input[type=button] {
     content: "";
     width: 0;
     height: 0;
-    top: 98%;
+    top: 98.5%;
     right: 47.2%;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
@@ -338,17 +350,93 @@ input[type=button] {
   width: 40%; }
 
 .article-title {
+  margin-left: 35%;
   width: 100%;
-  width: 100%;
+  width: 120px;
   text-align: center;
   text-transform: uppercase;
   font-size: 1.3rem;
-  color: #595959;
+  color: #333333;
   text-shadow: 1px 0 #bababa, 1.1px 0 black;
   border-bottom: 4px solid #FFD447; }
 
+.description {
+  text-align: center;
+  margin-top: 10px;
+  color: #595959;
+  font-size: 1.2rem; }
+
 .main-traits {
-  width: 50%; }
+  width: 40%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-betweeen;
+      -ms-flex-pack: space-betweeen;
+          justify-content: space-betweeen;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.trait {
+  width: 85%;
+  margin-bottom: 30px; }
+
+.trait-title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #333333;
+  text-shadow: 1px 0 #bababa, 1.1px 0 black; }
+
+.trait-description {
+  color: #595959; }
+
+/*stylelint-disable*/
+.main-skills {
+  background-color: white;
+  width: 90%;
+  max-width: 1024px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .main-skills:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 100%;
+    right: 47.2%;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #39CE98;
+    z-index: 1; }
+
+.section-title {
+  width: 120px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: #333333;
+  text-shadow: 1px 0 #bababa, 1.1px 0 black;
+  border-bottom: 4px solid #FFD447; }
 
 /*stylelint-disable*/
 html {

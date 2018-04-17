@@ -7,7 +7,7 @@
   position: relative;
   @include flex-box(row, space-around, center);
   @include bottom-arrow(after, 100%, 47.2%, 30px, 1, $color-primary);
-  @include bottom-arrow(before, 98%, 47.2%, 30px, 2, $color-component-background);
+  @include bottom-arrow(before, 98.5%, 47.2%, 30px, 2, $color-component-background);
   border-bottom: 4px solid $color-primary;
 }
 
@@ -16,10 +16,36 @@
 }
 
 .article-title {
+  margin-left: 35%;
   width: 100%;
-  @include section-title($font-size-section-title, $color-font-title, $text-shadow, $border-subtitles)
+  @include section-title($font-size-section-title, $color-font-text-links, $text-shadow, $border-subtitles)
+}
+
+.description {
+  text-align: center;
+  margin-top: 10px;
+  color: $color-font-text;
+  font-size: $font-size-base-text;
 }
 
 .main-traits {
-  width: 50%;
+  width: 40%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  @include flex-box(column, space-betweeen, center);
 }
+
+.trait {
+  width: 85%;
+  margin-bottom: 30px;
+}
+
+.trait-title {
+  text-transform: uppercase;
+  @include header-titles($font-size-sub-text, 700, $spacing-secondary-title, $color-font-text-links, $text-shadow);
+}
+
+.trait-description {
+  color: $color-font-text;
+}
+

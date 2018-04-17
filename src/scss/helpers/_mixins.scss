@@ -30,7 +30,7 @@
 }
 
 @mixin section-title ($font-size, $text-color, $text-shadow, $border) {
-  width: 100%;
+  width: 120px;
   text-align: center;
   text-transform: uppercase;
   font-size: $font-size;
