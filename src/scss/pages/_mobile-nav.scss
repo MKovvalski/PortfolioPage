@@ -32,7 +32,7 @@
 // styling mobile-nav
 
 .main-nav-mobile {
-  display: block;
+  display: none;
   @include component-container(transparent);
   @include bottom-arrow(after, 100%, 42.5%, 30px, 1, $color-container-background);
   z-index: 2;

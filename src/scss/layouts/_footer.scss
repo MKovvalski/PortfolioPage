@@ -1,1 +1,20 @@
 /*stylelint-disable*/
+
+.main-footer {
+  @include respond-to(mobile) {
+    width: 100%;
+  }
+}
+
+.contact-list {
+  @include respond-to(mobile) {
+    width: 80%;
+  }
+}
+
+.contact-logo {
+  @include respond-to(mobile) {
+    width: 52px;
+    height: 52px;
+  }
+}

@@ -254,7 +254,7 @@ input[type=button] {
   text-shadow: 1px 0 #bababa, 1.1px 0 black; }
 
 .main-nav {
-  width: 44%; }
+  width: 48%; }
 
 .menu-list {
   margin-right: 25px;
@@ -265,18 +265,18 @@ input[type=button] {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
 
 .nav-title a {
+  margin-right: 5px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 600;
   letter-spacing: 1px;
   color: white;
   text-shadow: 1px 0 #bababa, 1.1px 0 black; }
@@ -319,7 +319,7 @@ input[type=button] {
   z-index: 1; }
 
 .main-nav-mobile {
-  display: block;
+  display: none;
   width: 90%;
   max-width: 1024px;
   position: relative;
@@ -554,7 +554,7 @@ input[type=button] {
   max-width: 1024px;
   position: relative;
   background-color: #FFD447; }
-  .main-projects:before {
+  .main-projects:after {
     position: absolute;
     content: "";
     width: 0;
@@ -566,7 +566,7 @@ input[type=button] {
     border-top: 30px solid #FFD447;
     z-index: 1; }
 
-.project-wrapper {
+.projects-wrapper {
   margin-top: 50px;
   margin-bottom: 60px;
   display: -webkit-box;
@@ -818,10 +818,9 @@ body {
 /*stylelint-disable*/
 @media only screen and (min-width: 330px) and (max-width: 480px) {
   .main-skills {
-    width: 100%; } }
-
-.main-skills:after {
-  right: 42.5%; }
+    width: 100%; }
+    .main-skills:after {
+      right: 42.5%; } }
 
 @media only screen and (min-width: 330px) and (max-width: 480px) {
   .section-title {
@@ -846,7 +845,79 @@ body {
     margin-bottom: 30px; } }
 
 /*stylelint-disable*/
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+  .main-projects {
+    width: 100%; }
+    .main-projects:after {
+      right: 42.5%; } }
+
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+  .projects-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 50px;
+    margin-bottom: 35px; } }
+
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+  .project {
+    width: 80%;
+    max-width: 830px;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
+
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+  .project-title {
+    width: 100%;
+    font-size: 1.45rem; } }
+
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+  .project-link-wrapper {
+    width: 100%;
+    text-align: center; } }
+
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+  .project-github-link {
+    font-size: 1.3rem; } }
+
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+  .project-description {
+    width: 95%;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 1.3rem; } }
+
 /*stylelint-disable*/
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+  .main-footer {
+    width: 100%; } }
+
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+  .contact-list {
+    width: 80%; } }
+
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+  .contact-logo {
+    width: 52px;
+    height: 52px; } }
+
 /*stylelint-disable*/
 /*stylelint-disable*/
 @media only screen and (min-width: 330px) and (max-width: 480px) {

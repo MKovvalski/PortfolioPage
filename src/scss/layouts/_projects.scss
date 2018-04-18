@@ -1,1 +1,58 @@
 /*stylelint-disable*/
+
+.main-projects {
+  @include respond-to(mobile) {
+    width: 100%;
+    &:after {
+      right: 42.5%
+    }
+  }
+}
+
+.projects-wrapper {
+  @include respond-to(mobile) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 35px;
+  }
+}
+
+.project {
+  @include respond-to(mobile) {
+    width: 80%;
+    max-width: 830px;
+    margin-bottom: 30px;
+    @include flex-box(column, center, center);
+  }
+}
+
+.project-title {
+  @include respond-to(mobile) {
+    width: 100%;
+    font-size: $font-size-section-title-mobile + 0.1rem;
+  }
+}
+
+.project-link-wrapper {
+  @include respond-to(mobile) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.project-github-link {
+  @include respond-to(mobile) {
+    font-size: $font-size-text-mobile;
+  }
+}
+
+.project-description {
+  @include respond-to(mobile) {
+    width: 95%;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: $font-size-text-mobile;
+  }
+}
