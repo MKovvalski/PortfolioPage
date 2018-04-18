@@ -1,10 +1,42 @@
 /*stylelint-disable*/
 
+.main-skills {
+  @include respond-to(mobile) {
+    width: 100%;
+  }
+  &:after {
+    right: 42.5%;
+  }
+}
+
+.section-title {
+  @include respond-to(mobile) {
+    margin-top: 35px;
+    font-weight: 600;
+    font-size: $font-size-section-title-mobile + 0.1rem;
+  }
+}
+
 .skill-list {
   li {
     @include respond-to(mobile) {
       width: 45px;
       height: 45px;
     }
+  }
+}
+
+.main-skill-text {
+  @include respond-to(mobile) {
+    width: $width-mobile;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+}
+
+.main-skill-text-paragraph {
+  @include respond-to(mobile) {
+    font-size: $font-size-text-mobile;
+    margin-bottom: 30px;
   }
 }

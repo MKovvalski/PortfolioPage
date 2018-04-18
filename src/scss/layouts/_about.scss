@@ -6,7 +6,7 @@
     flex-direction: column;
     border-bottom: 10px solid $color-primary;
     &:before {
-      top: 99.3%;
+      top: 99%;
       right: 41.2%;
       border-right: 35px solid transparent;
       border-left: 35px solid transparent;
@@ -18,5 +18,43 @@
       border-top: 35px solid $color-primary;
       right: 41%;
     }
+  }
+}
+
+.short-description {
+  @include respond-to(mobile) {
+    width: $width-mobile;
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+}
+
+.article-title {
+  @include respond-to(mobile) {
+    font-weight: 600;
+    font-size: $font-size-section-title-mobile + 0.1rem;
+  }
+}
+
+.main-traits {
+  @include respond-to(mobile) {
+    width: $width-mobile;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+
+.trait {
+  @include respond-to(mobile) {
+    width: 100%;
+    text-align: center;
+    font-size: $font-size-text-mobile;
+  }
+}
+
+.trait-title {
+  @include respond-to(mobile) {
+    font-weight: 600;
+    font-size: $font-size-section-title-mobile;
   }
 }

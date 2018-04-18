@@ -423,7 +423,6 @@ input[type=button] {
           align-items: center; }
 
 .article-title {
-  width: 100%;
   width: 120px;
   text-align: center;
   text-transform: uppercase;
@@ -490,7 +489,7 @@ input[type=button] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .main-skills:before {
+  .main-skills:after {
     position: absolute;
     content: "";
     width: 0;
@@ -777,7 +776,7 @@ body {
             flex-direction: column;
     border-bottom: 10px solid #39CE98; }
     .main-about:before {
-      top: 99.3%;
+      top: 99%;
       right: 41.2%;
       border-right: 35px solid transparent;
       border-left: 35px solid transparent;
@@ -788,11 +787,63 @@ body {
       border-top: 35px solid #39CE98;
       right: 41%; } }
 
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+  .short-description {
+    width: 97%;
+    margin-top: 35px;
+    margin-bottom: 25px; } }
+
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+  .article-title {
+    font-weight: 600;
+    font-size: 1.45rem; } }
+
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+  .main-traits {
+    width: 97%;
+    margin-top: 0;
+    margin-bottom: 5px; } }
+
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+  .trait {
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem; } }
+
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+  .trait-title {
+    font-weight: 600;
+    font-size: 1.35rem; } }
+
 /*stylelint-disable*/
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+  .main-skills {
+    width: 100%; } }
+
+.main-skills:after {
+  right: 42.5%; }
+
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+  .section-title {
+    margin-top: 35px;
+    font-weight: 600;
+    font-size: 1.45rem; } }
+
 @media only screen and (min-width: 330px) and (max-width: 480px) {
   .skill-list li {
     width: 45px;
     height: 45px; } }
+
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+  .main-skill-text {
+    width: 97%;
+    margin-top: 15px;
+    margin-bottom: 0; } }
+
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+  .main-skill-text-paragraph {
+    font-size: 1.3rem;
+    margin-bottom: 30px; } }
 
 /*stylelint-disable*/
 /*stylelint-disable*/

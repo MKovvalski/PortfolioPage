@@ -14,7 +14,6 @@
 }
 
 .article-title {
-  width: 100%;
   @include section-title($font-size-section-title, $color-font-text-links, $text-shadow, $border-subtitles)
 }
 
