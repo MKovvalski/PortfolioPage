@@ -5,14 +5,6 @@
 @import "helpers/parameters.scss";
 @import "helpers/reset.scss";
 
-//layouts
-@import "layouts/header.scss";
-@import "layouts/about.scss";
-@import "layouts/skills.scss";
-@import "layouts/projects.scss";
-@import "layouts/footer.scss";
-@import "layouts/container.scss";
-
 //pages
 @import "pages/header.scss";
 @import "pages/mobile-nav.scss";
@@ -21,4 +13,14 @@
 @import "pages/projects.scss";
 @import "pages/footer.scss";
 @import "pages/container.scss";
+
+//layouts
+@import "layouts/header.scss";
+@import "layouts/about.scss";
+@import "layouts/skills.scss";
+@import "layouts/projects.scss";
+@import "layouts/footer.scss";
+@import "layouts/container.scss";
+@import "layouts/mobile-nav.scss";
+
 

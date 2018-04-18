@@ -1,1 +1,10 @@
 /*stylelint-disable*/
+
+.skill-list {
+  li {
+    @include respond-to(mobile) {
+      width: 45px;
+      height: 45px;
+    }
+  }
+}

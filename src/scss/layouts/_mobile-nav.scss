@@ -1,0 +1,17 @@
+/*stylelint-disable*/
+
+.main-nav-mobile {
+  @include respond-to(mobile) {
+    width: 100%;
+  }
+}
+
+.menu-hamburger {
+  @include respond-to(mobile) {
+    @include flex-box(column, space-around, center);
+  }
+}
+
+.nav-title {
+  font-size: $font-size-subtitle-mobile;
+}
