@@ -1,6 +1,6 @@
 /*stylelint-disable*/
 
-.menu-hamburger {
+.menu-burger {
   display: none;
 }
 
@@ -25,17 +25,25 @@
 }
 
 .main-nav {
-  width: 48%;
+  width: 47%;
 }
 
 .menu-list {
-  margin-right: 25px;
   @include flex-box(row, space-around, center);
 }
 
+.nav-title {
+  margin-right: 10px;
+}
+
 .nav-title a {
-  margin-right: 5px;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   @include header-titles(1.2rem, 600, $spacing-nav-elements, $color-font-subtitle, $text-shadow);
+  transition: all 0.6s;
+  &:hover {
+    color: $color-tertiary;
+  }
 }
+

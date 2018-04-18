@@ -33,6 +33,12 @@
   }
 }
 
+.menu-list {
+  @include respond-to(tablet) {
+    flex-wrap: wrap;
+  }
+}
+
 .menu-hamburger {
   @include respond-to(mobile) {
     display: block;

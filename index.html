@@ -16,7 +16,7 @@
       <h1 class = "name-and-surname">Matuesz Kowalski</h1>
       <h2 class = "position">Junior Front-End Developer</h2>
     </a>
-    <div class = "menu-hamburger"> <!--burger menu for mobile -->
+    <div class = "menu-burger"> <!--burger menu for mobile -->
       <div class = "visually-hidden">menu</div>
       <div class = "menu-burger-line first"></div>
       <div class = "menu-burger-line-wrapper">
@@ -27,10 +27,10 @@
     </div>
     <nav class = "main-nav">
       <ul class = "menu-list">
-        <li class = "nav-title header-about"><a href="">About me</a></li>
-        <li class = "nav-title header-skills"><a href="">Skills</a></li>
-        <li class = "nav-title header-projects"><a href="">Projects</a></li>
-        <li class = "nav-title header-contact"><a href="">Contact</a></li>
+        <li class = "nav-title header-about"><a href="#about" data-scroll>About me</a></li>
+        <li class = "nav-title header-skills"><a href="#skills" data-scroll>Skills</a></li>
+        <li class = "nav-title header-projects"><a href="#projects" data-scroll>Projects</a></li>
+        <li class = "nav-title header-contact"><a href="#contact" data-scroll>Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -39,10 +39,10 @@
 
   <nav class = "main-nav-mobile">
     <ul class = "menu-list-mobile">
-      <li class = "nav-title header-mobile-about"><a href="">About me</a></li>
-      <li class = "nav-title header-mobile-skills"><a href="">Skills</a></li>
-      <li class = "nav-title header-mobile-projects"><a href="">Projects</a></li>
-      <li class = "nav-title header-mobile-contact"><a href="">Contact</a></li>
+      <li class = "nav-title header-mobile-about"><a href="#about" data-scroll>About me</a></li>
+      <li class = "nav-title header-mobile-skills"><a href="#skills" data-scroll>Skills</a></li>
+      <li class = "nav-title header-mobile-projects"><a href="#projects" data-scroll>Projects</a></li>
+      <li class = "nav-title header-mobile-contact"><a href="#contact" data-scroll>Contact</a></li>
     </ul>
   </nav>
 
@@ -119,7 +119,9 @@
           <a href="https://mateuszkowalskicl.github.io/sitOnChairPrime/" target = "_blank">
             <img class = "project-peek" src="./src/imgs/tile.png" alt="">
           </a>
-          <a class = "project-github-link" href="https://github.com/MateuszKowalskiCL/sitOnChairPrime" target = "_blank">View the <span>code</span></a>
+          <div class = "project-link-wrapper">
+            <a class = "project-github-link" href="https://github.com/MateuszKowalskiCL/sitOnChairPrime" target = "_blank">View the <span>code</span></a>
+          </div>
           <p class = "project-description">Developed through first half of Coders Lab Boot Camp. Build without frameworks or additional libraries</p>
       </article>
     </div>

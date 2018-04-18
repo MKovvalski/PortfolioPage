@@ -31,6 +31,7 @@
 
 .article-title {
   @include respond-to(mobile) {
+    width: 150px;
     font-weight: 600;
     font-size: $font-size-section-title-mobile + 0.1rem;
   }

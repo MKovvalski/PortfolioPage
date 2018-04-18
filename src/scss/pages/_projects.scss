@@ -16,6 +16,11 @@
   background-color: $color-component-background;
   border-radius: 5px;
   box-shadow: $box-shadow-resting;
+  transition: all 0.5s;
+}
+
+.project:hover {
+  box-shadow: $box-shadow-hover;
 }
 
 .project-title {
@@ -35,6 +40,10 @@
   border-bottom: $border-projects-images;
 }
 
+.project-link-wrapper {
+  margin-top: 10px;
+}
+
 .project-github-link {
   margin-left: 10px;
   text-decoration: none;
@@ -43,6 +52,10 @@
   span {
     font-weight: 900;
     color: $color-font-text-links;
+    transition: all 0.4s;
+  }
+  span:hover {
+    color: $color-primary;
   }
 }
 

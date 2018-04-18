@@ -8,7 +8,7 @@
 
 .section-title {
   margin-top: 50px;
-  @include section-title($font-size-section-title, $color-font-text-links, $text-shadow, $border-subtitles);
+  @include section-title($font-size-section-title + 0.2rem, $color-font-text-links, $text-shadow, $border-subtitles);
 }
 
 .skill-list {
@@ -39,6 +39,11 @@
   color: $color-font-text-links;
   font-weight: 700;
   text-decoration: none;
+  transition: all 0.4s;
+}
+
+.skill-github-link:hover {
+  color: $color-primary;
 }
 
 

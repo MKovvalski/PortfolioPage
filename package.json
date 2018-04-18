@@ -45,6 +45,7 @@
     "webpack"
   ],
   "dependencies": {
-    "extract-text-webpack-plugin": "^3.0.1"
+    "extract-text-webpack-plugin": "^3.0.1",
+    "sweet-scroll": "^3.0.1"
   }
 }

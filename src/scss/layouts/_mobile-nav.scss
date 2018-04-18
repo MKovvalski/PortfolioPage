@@ -6,7 +6,7 @@
   }
 }
 
-.menu-hamburger {
+.menu-burger {
   @include respond-to(mobile) {
     @include flex-box(column, space-around, center);
   }

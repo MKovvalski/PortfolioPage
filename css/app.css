@@ -201,7 +201,7 @@ input[type=button] {
   clear: both; }
 
 /*stylelint-disable*/
-.menu-hamburger {
+.menu-burger {
   display: none; }
 
 .main-header {
@@ -254,10 +254,9 @@ input[type=button] {
   text-shadow: 1px 0 #bababa, 1.1px 0 black; }
 
 .main-nav {
-  width: 48%; }
+  width: 47%; }
 
 .menu-list {
-  margin-right: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,18 +270,25 @@ input[type=button] {
       -ms-flex-align: center;
           align-items: center; }
 
+.nav-title {
+  margin-right: 10px; }
+
 .nav-title a {
-  margin-right: 5px;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 1px;
   color: white;
-  text-shadow: 1px 0 #bababa, 1.1px 0 black; }
+  text-shadow: 1px 0 #bababa, 1.1px 0 black;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s; }
+  .nav-title a:hover {
+    color: #595959; }
 
 /*stylelint-disable*/
-.menu-hamburger {
+.menu-burger {
   margin-right: 10px;
   width: 54px;
   height: 51px;
@@ -506,7 +512,7 @@ input[type=button] {
   width: 120px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #333333;
   text-shadow: 1px 0 #bababa, 1.1px 0 black;
   border-bottom: 4px solid #FFD447; }
@@ -546,7 +552,12 @@ input[type=button] {
 .skill-github-link {
   color: #333333;
   font-weight: 700;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s; }
+
+.skill-github-link:hover {
+  color: #39CE98; }
 
 /*stylelint-disable*/
 .main-projects {
@@ -587,7 +598,13 @@ input[type=button] {
   background-color: white;
   border-radius: 5px;
   -webkit-box-shadow: 0px 13px 21px -7px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 13px 21px -7px rgba(0, 0, 0, 0.3); }
+          box-shadow: 0px 13px 21px -7px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.project:hover {
+  -webkit-box-shadow: 0px 13px 21px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 13px 21px 5px rgba(0, 0, 0, 0.3); }
 
 .project-title {
   line-height: 43px;
@@ -609,6 +626,9 @@ input[type=button] {
   border-top: 2px solid #bababa;
   border-bottom: 2px solid #bababa; }
 
+.project-link-wrapper {
+  margin-top: 10px; }
+
 .project-github-link {
   margin-left: 10px;
   text-decoration: none;
@@ -616,7 +636,11 @@ input[type=button] {
   color: #595959; }
   .project-github-link span {
     font-weight: 900;
-    color: #333333; }
+    color: #333333;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s; }
+  .project-github-link span:hover {
+    color: #39CE98; }
 
 .project-description {
   width: 90%;
@@ -795,8 +819,9 @@ body {
 
 @media only screen and (min-width: 330px) and (max-width: 480px) {
   .article-title {
+    width: 150px;
     font-weight: 600;
-    font-size: 1.45rem; } }
+    font-size: 1.5rem; } }
 
 @media only screen and (min-width: 330px) and (max-width: 480px) {
   .main-traits {
@@ -813,7 +838,7 @@ body {
 @media only screen and (min-width: 330px) and (max-width: 480px) {
   .trait-title {
     font-weight: 600;
-    font-size: 1.35rem; } }
+    font-size: 1.4rem; } }
 
 /*stylelint-disable*/
 @media only screen and (min-width: 330px) and (max-width: 480px) {
@@ -824,9 +849,10 @@ body {
 
 @media only screen and (min-width: 330px) and (max-width: 480px) {
   .section-title {
+    width: 150px;
     margin-top: 35px;
     font-weight: 600;
-    font-size: 1.45rem; } }
+    font-size: 1.5rem; } }
 
 @media only screen and (min-width: 330px) and (max-width: 480px) {
   .skill-list li {
@@ -885,7 +911,7 @@ body {
 @media only screen and (min-width: 330px) and (max-width: 480px) {
   .project-title {
     width: 100%;
-    font-size: 1.45rem; } }
+    font-size: 1.5rem; } }
 
 @media only screen and (min-width: 330px) and (max-width: 480px) {
   .project-link-wrapper {
@@ -925,7 +951,7 @@ body {
     width: 100%; } }
 
 @media only screen and (min-width: 330px) and (max-width: 480px) {
-  .menu-hamburger {
+  .menu-burger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
