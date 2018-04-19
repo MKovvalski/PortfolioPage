@@ -3,6 +3,7 @@
 .main-footer {
   @include component-container($color-tertiary);
   @include flex-box(column, center, center);
+  margin-bottom: 20px;
 }
 
 .footer-title {
@@ -25,7 +26,7 @@
 }
 
 .gmail {
-  transition: all 0.3s ease-out;
+  //transition: all 0.3s ease-out;
   //background-image: url("../../imgs/tile.png");
   //background-size: 100% 100%;
   //background-repeat: no-repeat;

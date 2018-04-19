@@ -6,6 +6,10 @@
   }
 }
 
+.nav-title {
+  margin: 0;
+}
+
 .menu-burger {
   @include respond-to(mobile) {
     @include flex-box(column, space-around, center);

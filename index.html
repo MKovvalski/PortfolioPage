@@ -12,10 +12,18 @@
   <!-------- Header -------->
 
   <header class = "main-header">
-    <a href = "/" class = "title">
-      <h1 class = "name-and-surname">Matuesz Kowalski</h1>
-      <h2 class = "position">Junior Front-End Developer</h2>
-    </a>
+    <nav class = "main-nav">
+      <ul class = "menu-list">
+        <li class = "nav-title header-about"><a href="#about" data-scroll>About me</a></li>
+        <li class = "nav-title header-skills"><a href="#skills" data-scroll>Skills</a></li>
+        <li class = "nav-title header-projects"><a href="#projects" data-scroll>Projects</a></li>
+        <li class = "nav-title header-contact"><a href="#contact" data-scroll>Contact</a></li>
+      </ul>
+    </nav>
+      <a href = "/" class = "title">
+        <span class = "name-and-surname">Matuesz Kowalski</span>
+        <span class = "position">Junior Front-End Developer</span>
+      </a>
     <div class = "menu-burger"> <!--burger menu for mobile -->
       <div class = "visually-hidden">menu</div>
       <div class = "menu-burger-line first"></div>
@@ -25,14 +33,6 @@
       </div>
       <div class = "menu-burger-line third"></div>
     </div>
-    <nav class = "main-nav">
-      <ul class = "menu-list">
-        <li class = "nav-title header-about"><a href="#about" data-scroll>About me</a></li>
-        <li class = "nav-title header-skills"><a href="#skills" data-scroll>Skills</a></li>
-        <li class = "nav-title header-projects"><a href="#projects" data-scroll>Projects</a></li>
-        <li class = "nav-title header-contact"><a href="#contact" data-scroll>Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <!------- Mobile Nav ----->
@@ -74,13 +74,12 @@
   <section class = "main-skills" id = "skills">
     <h2 class = "section-title">Skills</h2>
     <ul class = "skill-list">
-      <li class = "html"><span class = "visually-hidden">html</span></li>
-      <li class = "sass"><span class = "visually-hidden">sass</span></li>
-      <li class = "js"><span class = "visually-hidden">js</span></li>
-      <li class = "react"><span class = "visually-hidden">react</span></li>
-      <li class = "redux"><span class = "visually-hidden">redux</span></li>
-      <li class = "webpack"><span class = "visually-hidden">webpack</span></li>
-      <li class = "git"><span class = "visually-hidden">git</span></li>
+      <li><img src="./imgs/html-5.png" alt=""><span class = "visually-hidden">html</span></li>
+      <li><img src="./imgs/css-logo.png" alt=""><span class = "visually-hidden">git</span></li>
+      <li><img src="./imgs/js-logo.jpg" alt=""><span class = "visually-hidden">js</span></li>
+      <li><img src="./imgs/sass-logo.png" alt=""><span class = "visually-hidden">sass</span></li>
+      <li><img src="./imgs/react-logo.png" alt=""><span class = "visually-hidden">react</span></li>
+      <li><img src="./imgs/redux-logo.png" alt=""><span class = "visually-hidden">redux</span></li>
     </ul>
     <div class = "main-skill-text">
       <p class = "main-skill-text-paragraph">Knowing that it would be hard to asses skills of someone who has no commercial experience, I work daily on my own projects, to make the assessment easier.</p>
@@ -92,12 +91,12 @@
 
   <!------- Projects ------->
 
-  <section class = "main-projects" id = "projects">
-    <div class = "projects-wrapper">
+  <section class = "main-projects">
+    <div class = "projects-wrapper" id = "projects">
       <article class = "project">
           <h3 class = "project-title">Pokemon Game</h3>
           <a href="https://mateuszkowalskicl.github.io/PokemonGame-simplified/" target = "_blank">
-            <img class = "project-peek" src="./src/imgs/Logo-Pokemon.png" alt="">
+            <img class = "project-peek" src="imgs/Logo-Pokemon.png" alt="">
           </a>
           <div class = "project-link-wrapper">
             <a class = "project-github-link" href="https://github.com/MateuszKowalskiCL/PokemonGame-simplified" target = "_blank">View the <span>code</span></a>
@@ -107,7 +106,7 @@
       <article class = "project">
           <h3 class = "project-title">Portfolio Page</h3>
           <a href="https://mateuszkowalskicl.github.io/portfolioPage/" target = "_blank">
-            <img class = "project-peek" src="./src/imgs/portfolio.png" alt="">
+            <img class = "project-peek" src="imgs/portfolio.png" alt="">
           </a>
           <div class = "project-link-wrapper">
             <a class = "project-github-link" href="https://github.com/MateuszKowalskiCL/portfolioPage" target = "_blank">View the <span>code</span></a>
@@ -117,7 +116,7 @@
       <article class = "project">
           <h3 class = "project-title">Sit on chair</h3>
           <a href="https://mateuszkowalskicl.github.io/sitOnChairPrime/" target = "_blank">
-            <img class = "project-peek" src="./src/imgs/tile.png" alt="">
+            <img class = "project-peek" src="imgs/tile.png" alt="">
           </a>
           <div class = "project-link-wrapper">
             <a class = "project-github-link" href="https://github.com/MateuszKowalskiCL/sitOnChairPrime" target = "_blank">View the <span>code</span></a>

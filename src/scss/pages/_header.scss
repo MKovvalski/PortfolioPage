@@ -1,19 +1,25 @@
 /*stylelint-disable*/
 
+
 .menu-burger {
   display: none;
 }
 
 .main-header {
+  height: 92.5vh;
+  margin-top: 20px;
   @include component-container($color-primary);
-  @include flex-box(row, space-between, center);
+  @include flex-box(column, center, center);
   @include bottom-arrow(after, 100%, 47.2%, 30px, 1, $color-primary);
 }
 
 .title {
-  margin: 25px 0 25px 20px;
+  width: 100%;
+  height: 90%;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  @include flex-box(column, center, center);
 }
 
 .name-and-surname {
@@ -22,25 +28,33 @@
 
 .position {
   @include header-titles($font-size-secondary-title, 600, $spacing-secondary-title, $color-font-subtitle, $text-shadow);
+  margin-bottom: 10%;
 }
 
 .main-nav {
-  width: 47%;
+  width: 100%;
+  height: 10%;
+  @include flex-box(row, flex-end, center);
 }
 
 .menu-list {
+  width: 50%;
   @include flex-box(row, space-around, center);
 }
 
 .nav-title {
-  margin-right: 10px;
+    margin-right: 5px;
+  &:last-child {
+    margin-right: 0;
+    border-right: none;
+  }
 }
 
 .nav-title a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  @include header-titles(1.2rem, 600, $spacing-nav-elements, $color-font-subtitle, $text-shadow);
+  @include header-titles(1.2rem, 500, $spacing-nav-elements, $color-font-subtitle, $text-shadow);
   transition: all 0.6s;
   &:hover {
     color: $color-tertiary;

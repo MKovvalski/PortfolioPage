@@ -22,11 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
   menuBurger.addEventListener("click", () => {
     switch (menuMobile.id) {
       case "display-block":
-        console.log("a");
             menuMobile.id = "display-none";
             break;
       default:
-        console.log("b");
         menuMobile.id = "display-block"
     }
   })
