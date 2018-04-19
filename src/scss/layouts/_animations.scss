@@ -1,0 +1,64 @@
+/*stylelint-disable*/
+
+// id's for email
+
+#move-left {
+  animation: move-left 0.3s linear 1 forwards;
+}
+
+#move-back {
+  animation: move-back 0.3s linear 1 forwards;
+}
+
+#expand {
+  animation: expand 0.3s 0.35s linear 1 forwards;
+}
+
+#shrink {
+  animation: shrink 0.3s linear 1 forwards;
+}
+
+
+// animations for mail
+
+@keyframes expand {
+  0% {
+    width: 50px;
+    padding-right: 0;
+  }
+  98% {
+    padding-right: 0;
+  }
+  99% {
+    padding-right: 8px;
+  }
+  100% {
+    padding-right: 8px;
+    width: 350px;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    width: 350px;
+  }
+  100% {
+    width: 50px;
+  }
+}
+
+@keyframes move-left {
+  100% {
+    transform: translate(-250px, 0);
+
+  }
+}
+
+@keyframes move-back {
+  0% {
+    transform: translate(-250px, 0);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}

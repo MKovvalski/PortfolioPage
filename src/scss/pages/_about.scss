@@ -3,9 +3,9 @@
 .main-about {
   @include component-container($color-component-background);
   @include flex-box(row, space-around, center);
-  @include bottom-arrow(after, 100%, 47.2%, 30px, 1, $color-primary);
-  @include bottom-arrow(before, 98.5%, 47.2%, 30px, 2, $color-component-background);
-  border-bottom: 4px solid $color-primary;
+  @include bottom-arrow(after, 101%, 46%, 40px, 1, $color-primary);
+  @include bottom-arrow(before, 98.5%, 46%, 40px, 2, $color-component-background);
+  border-bottom: 10px solid $color-primary;
 }
 
 .short-description {

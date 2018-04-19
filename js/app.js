@@ -101,6 +101,27 @@ document.addEventListener("DOMContentLoaded", () => {
         menuMobile.id = "display-block";
     }
   });
+
+  // toggles for header mail animations
+
+  const mailIcon = document.querySelector(".header-gmail-logo");
+  const mailExpander = document.querySelector(".mail-expand");
+
+  mailIcon.addEventListener("click", function () {
+    switch (mailIcon.id) {
+      case "move-left":
+        mailExpander.id = "shrink";
+        mailIcon.id = "move-back";
+        mailExpander.innerText = "";
+        break;
+      default:
+        mailExpander.id = "expand";
+        mailIcon.id = "move-left";
+        setTimeout(() => {
+          mailExpander.innerText = "matt.kowalski.public@gmail.com";
+        }, 700);
+    }
+  });
 });
 
 /***/ }),

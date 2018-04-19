@@ -3,7 +3,9 @@
 .main-skills {
   @include component-container($color-component-background);
   @include flex-box(column, center, center);
-  @include bottom-arrow(after, 100%, 47.2%, 30px, 1, $color-component-background);
+  @include bottom-arrow(after, 100%, 47.2%, 40px, 1, $color-component-background);
+  //@include bottom-arrow(before, 0%, 45.5%, 40px, 0, $color-secondary);
+  //border-top: 5px solid $color-secondary;
 }
 
 .section-title {
