@@ -19,6 +19,9 @@
 }
 
 .skill-list {
+  @include respond-to(mobile) {
+    width: 90%;
+  }
   li {
     @include respond-to(mobile) {
       width: 45px;
