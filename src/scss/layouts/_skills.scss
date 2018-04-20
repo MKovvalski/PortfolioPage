@@ -4,7 +4,7 @@
   @include respond-to(mobile) {
     width: 100%;
     &:after {
-      right: 42.5%;
+      right: 41%;
     }
   }
 }

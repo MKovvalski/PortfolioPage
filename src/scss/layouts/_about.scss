@@ -6,8 +6,8 @@
     flex-direction: column;
     border-bottom: 10px solid $color-primary;
     &:before {
-      top: 99.5%;
-      right: 41.2%;
+      top: 98.5%;
+      right: 39%;
       border-right: 35px solid transparent;
       border-left: 35px solid transparent;
       border-top: 35px solid $color-component-background;
@@ -16,7 +16,8 @@
       border-right: 35px solid transparent;
       border-left: 35px solid transparent;
       border-top: 35px solid $color-primary;
-      right: 41%;
+      top: 100%;
+      right: 39%;
     }
   }
 }

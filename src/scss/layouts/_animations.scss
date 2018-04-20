@@ -7,23 +7,29 @@
 #move-left {
   animation: move-left 0.3s linear 1 forwards;
   @include respond-to(mobile) {
-    animation: move-left-mobile 0.3s linear 1 forwards;
+    animation: move-left-mobile 0.2s linear 1 forwards;
   }
 }
 
 #move-back {
   animation: move-back 0.3s linear 1 forwards;
   @include respond-to(mobile) {
-    animation: move-back-mobile 0.3s linear 1 forwards;
+    animation: move-back-mobile 0.2s linear 1 forwards;
   }
 }
 
 #expand {
   animation: expand 0.3s 0.35s linear 1 forwards;
+  @include respond-to(mobile)  {
+    animation: expand-mobile 0.2s linear 1 forwards;
+  }
 }
 
 #shrink {
   animation: shrink 0.3s linear 1 forwards;
+  @include respond-to(mobile) {
+    animation: shrink-mobile 0.2s linear 1 forwards;
+  }
 }
 
 
@@ -59,13 +65,22 @@
   }
   100% {
     padding-right: 8px;
-    width: 350px;
+    width: 95vw;
   }
 }
 
 @keyframes shrink {
   0% {
     width: 350px;
+  }
+  100% {
+    width: 50px;
+  }
+}
+
+@keyframes shrink-mobile {
+  0% {
+    width: 95vw;
   }
   100% {
     width: 50px;
@@ -81,7 +96,7 @@
 
 @keyframes move-left-mobile {
   100% {
-    transform: translate(-20vw, 0);
+    transform: translate(-18vw, 0);
 
   }
 }
@@ -97,7 +112,7 @@
 
 @keyframes move-back-mobile {
   0% {
-    transform: translate(-20vw, 0);
+    transform: translate(-18vw, 0);
   }
   100% {
     transform: translate(0,0);
@@ -157,5 +172,134 @@
   }
   100% {
     transform: translate(0, -1000px);
+  }
+}
+
+//  ----- animations for menu burger ----- //
+
+// id's for menu burger
+
+#move-up {
+  animation: move-up 0.2s linear 1 forwards;
+}
+
+#move-down {
+  animation: move-down 0.2s linear 1 forwards;
+}
+
+#rotate-left {
+  animation: rotate-left 0.2s linear 1 forwards;
+}
+
+#rotate-counter-left {
+  animation: rotate-counter-left 0.2s linear 1 forwards;
+}
+
+#rotate-right {
+  animation: rotate-right 0.2s linear 1 forwards;
+}
+
+#rotate-counter-right {
+  animation: rotate-counter-right 0.2s linear 1 forwards;
+}
+
+#rotate-downward-right {
+  animation: rotate-downward-right 0.2s linear 1 forwards;
+}
+
+#rotate-counter-downward-right {
+  animation: rotate-counter-downward-right 0.2s linear 1 forwards;
+}
+
+#rotate-downward-left {
+  animation: rotate-downward-left 0.2s linear 1 forwards;
+}
+
+#rotate-counter-downward-left {
+  animation: rotate-counter-downward-left 0.2s linear 1 forwards;
+}
+
+// animations for menu burger
+
+@keyframes move-up {
+  100% {
+    transform: translate(0, -2.5px);
+  }
+}
+
+@keyframes move-down {
+  0% {
+    transform: translate(0, -2.5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes rotate-left {
+  100% {
+    width: 40px;
+    transform: translate(7.5px, 0px) rotate(90deg);
+
+  }
+}
+
+@keyframes rotate-counter-left {
+  0% {
+    width: 40px;
+    transform: translate(7.5px, 0px) rotate(90deg);
+
+  }
+  100% {
+    width: 45px;
+    transform: translate(0 , 0) rotate(0deg);
+  }
+}
+
+@keyframes rotate-right {
+  100% {
+    width: 40px;
+    transform: translate(-7.7px, 1.2px) rotate(90deg);
+  }
+}
+
+@keyframes rotate-counter-right {
+  0% {
+    width: 40px;
+    transform: translate(-7.7px, 1.2px) rotate(90deg);
+  }
+  100% {
+    width: 45px;
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes rotate-downward-right {
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes rotate-counter-downward-right {
+  0% {
+    transform: translate(0px, 0px) rotate(45deg);
+  }
+  100% {
+    transform: translate(0, 0)rotate(0deg);
+  }
+}
+
+@keyframes rotate-downward-left {
+  100% {
+    transform: translate(0, 0) rotate(-45deg);
+  }
+}
+
+@keyframes rotate-counter-downward-left {
+  0% {
+    transform: translate(0px, 0px) rotate(-45deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
   }
 }
