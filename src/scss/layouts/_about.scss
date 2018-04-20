@@ -6,7 +6,7 @@
     flex-direction: column;
     border-bottom: 10px solid $color-primary;
     &:before {
-      top: 99%;
+      top: 99.5%;
       right: 41.2%;
       border-right: 35px solid transparent;
       border-left: 35px solid transparent;
@@ -24,7 +24,7 @@
 .short-description {
   @include respond-to(mobile) {
     width: $width-mobile;
-    margin-top: 35px;
+    margin-top: 45px;
     margin-bottom: 25px;
   }
 }

@@ -8,7 +8,7 @@
 .main-header {
   //background-image: linear-gradient(rgba($color-secondary, 0.9), rgba($color-secondary, 0.9)), url("/imgs/background-NY-2.jpg");
   background-size: cover;
-  height: 92.5vh;
+  height: 640px;
   margin-top: 20px;
   @include component-container($color-secondary);
   @include flex-box(column, center, center);
@@ -82,7 +82,7 @@
   position: relative;
   img {
     position: relative;
-    z-index: 30;
+    z-index: 3;
   }
 }
 

@@ -60,12 +60,11 @@
   align-items: $align;
 }
 
-// media mixin
+// media mixin - credit to http://thesassway.com/intermediate/responsive-web-design-part-2;
 
-// -- disclaimer! I do not create this function - credit to http://thesassway.com/intermediate/responsive-web-design-part-2;
 @mixin respond-to($media) {
   @if $media == mobile {
-    @media only screen and (min-width: 330px) and (max-width: 480px) { @content; }
+    @media only screen and (min-width: 300px) and (max-width: 480px) { @content; }
   }
   @else if $media == tablets {
     @media only screen and (min-width: 481px) and (max-width: 1024px) { @content; }
@@ -74,38 +73,3 @@
     @media only screen and (min-width: 1024px) { @content; }
   }
 }
-
-
-//// Animation mixins
-//
-//// -- mixin that adds rotation animation to element and state final position and angle of
-//// said element
-//
-//@mixin onward-animation ($duration, $width, $trans-param-width, $trans-param-height, $rot-param) {
-//  animation: rotate $duration linear 1 forwards;
-//  @keyframes rotate {
-//    100% {
-//      width: $width;
-//      transform: translate($trans-param-width, $trans-param-height) rotate($rot-param);
-//    }
-//  }
-//}
-//
-//// -- mixin created to reverse effects of onwards-animation mixin. Allows to specify entry
-//// positions and end positions
-//
-//@mixin backward-animation ($duration, $width-start, $width-end, $trans-param-width-start,
-//                           $trans-param-height-start, $trans-param-width-end,
-//                           $trans-param-height-end,$rot-param-start, $rot-param-end) {
-//  animation: rotate-back $duration linear 1 forwards;
-//  @keyframes rotate-back {
-//    0% {
-//      width: $width-start;
-//      transform: translate($trans-param-width-start, $trans-param-height-start) rotate($rot-param-start);
-//    }
-//    100% {
-//      width: $width-end;
-//      transform: translate($trans-param-width-end, $trans-param-height-end) rotate($rot-param-end);
-//    }
-//  }
-//}

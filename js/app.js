@@ -90,15 +90,22 @@ document.addEventListener("DOMContentLoaded", () => {
   //Show Mobile Menu
 
   const menuBurger = document.querySelector(".menu-burger");
-  const menuMobile = document.querySelector(".main-nav-mobile");
+  const mainNav = document.querySelector(".main-nav");
+  const arrayOfNavPositions = document.querySelectorAll(".menu-list li");
 
   menuBurger.addEventListener("click", () => {
-    switch (menuMobile.id) {
-      case "display-block":
-        menuMobile.id = "display-none";
+    switch (mainNav.id) {
+      case "elongate":
+        arrayOfNavPositions.forEach(e => {
+          e.id = "bounce-back";
+        });
+        mainNav.id = "shorten";
         break;
       default:
-        menuMobile.id = "display-block";
+        arrayOfNavPositions.forEach(e => {
+          e.id = "bounce";
+        });
+        mainNav.id = "elongate";
     }
   });
 
