@@ -279,10 +279,14 @@ input[type=button] {
     width: 50px;
     height: 50px;
     -o-object-fit: cover;
-       object-fit: cover; }
-    .header-contact-list li:last-child {
-      background-color: white;
-      border-radius: 50%; }
+       object-fit: cover;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+    .header-contact-list li:hover {
+      -webkit-box-shadow: 0px 13px 21px -7px rgba(0, 0, 0, 0.3);
+              box-shadow: 0px 13px 21px -7px rgba(0, 0, 0, 0.3); }
 
 .name-and-surname {
   font-size: 3rem;
@@ -352,6 +356,7 @@ input[type=button] {
     color: #595959; }
 
 .header-gmail-logo {
+  border-radius: 50%;
   position: relative; }
   .header-gmail-logo img {
     position: relative;
@@ -841,9 +846,6 @@ body {
     display: block;
     z-index: 5; } }
 
-.mail-expand {
-  font-size: 5vw; }
-
 /*stylelint-disable*/
 @media only screen and (min-width: 300px) and (max-width: 480px) {
   .main-about {
@@ -900,7 +902,7 @@ body {
   .main-skills {
     width: 100%; }
     .main-skills:after {
-      right: 41%; } }
+      right: 39%; } }
 
 @media only screen and (min-width: 300px) and (max-width: 480px) {
   .section-title {
@@ -1064,32 +1066,32 @@ body {
 
 /*stylelint-disable*/
 #move-left {
-  -webkit-animation: move-left 0.3s linear 1 forwards;
-          animation: move-left 0.3s linear 1 forwards; }
+  -webkit-animation: move-left 0.2s linear 1 forwards;
+          animation: move-left 0.2s linear 1 forwards; }
   @media only screen and (min-width: 300px) and (max-width: 480px) {
     #move-left {
       -webkit-animation: move-left-mobile 0.2s linear 1 forwards;
               animation: move-left-mobile 0.2s linear 1 forwards; } }
 
 #move-back {
-  -webkit-animation: move-back 0.3s linear 1 forwards;
-          animation: move-back 0.3s linear 1 forwards; }
+  -webkit-animation: move-back 0.2s linear 1 forwards;
+          animation: move-back 0.2s linear 1 forwards; }
   @media only screen and (min-width: 300px) and (max-width: 480px) {
     #move-back {
       -webkit-animation: move-back-mobile 0.2s linear 1 forwards;
               animation: move-back-mobile 0.2s linear 1 forwards; } }
 
 #expand {
-  -webkit-animation: expand 0.3s 0.35s linear 1 forwards;
-          animation: expand 0.3s 0.35s linear 1 forwards; }
+  -webkit-animation: expand 0.2s 0.25s linear 1 forwards;
+          animation: expand 0.2s 0.25s linear 1 forwards; }
   @media only screen and (min-width: 300px) and (max-width: 480px) {
     #expand {
-      -webkit-animation: expand-mobile 0.2s linear 1 forwards;
-              animation: expand-mobile 0.2s linear 1 forwards; } }
+      -webkit-animation: expand-mobile 0.2s 0.25s linear 1 forwards;
+              animation: expand-mobile 0.2s 0.25s linear 1 forwards; } }
 
 #shrink {
-  -webkit-animation: shrink 0.3s linear 1 forwards;
-          animation: shrink 0.3s linear 1 forwards; }
+  -webkit-animation: shrink 0.2s linear 1 forwards;
+          animation: shrink 0.2s linear 1 forwards; }
   @media only screen and (min-width: 300px) and (max-width: 480px) {
     #shrink {
       -webkit-animation: shrink-mobile 0.2s linear 1 forwards;

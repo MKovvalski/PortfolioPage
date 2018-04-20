@@ -19,11 +19,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuBurger = document.querySelector(".menu-burger");
   const mainNav = document.querySelector(".main-nav");
   const arrayOfNavPositions = document.querySelectorAll(".menu-list li");
-  const first = document.querySelector(".first");
-  const second = document.querySelector(".menu-burger-line-wrapper");
-  const smallFirst = document.querySelector(".small-first");
-  const smallSecond = document.querySelector(".small-second");
-  const third = document.querySelector(".third");
+  // const first = document.querySelector(".first");
+  // const second = document.querySelector(".menu-burger-line-wrapper");
+  // const smallFirst = document.querySelector(".small-first");
+  // const smallSecond = document.querySelector(".small-second");
+  // const third = document.querySelector(".third");
+
+  arrayOfNavPositions.forEach( (e) => {
+    e.addEventListener("click", () => {
+      mainNav.id = "shorten";
+      arrayOfNavPositions.forEach( (e) => {
+        e.id = "bounce-back";
+      })
+    });
+  });
 
   menuBurger.addEventListener("click", () => {
     switch (mainNav.id) {
@@ -68,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
         mailIcon.id = "move-left";
         setTimeout(() => {
           mailExpander.innerText = "matt.kowalski.public@gmail.com";
-        },700);
+        },440);
     }
   });
 

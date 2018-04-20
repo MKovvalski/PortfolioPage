@@ -5,33 +5,32 @@
 // id's for email
 
 #move-left {
-  animation: move-left 0.3s linear 1 forwards;
+  animation: move-left 0.2s linear 1 forwards;
   @include respond-to(mobile) {
     animation: move-left-mobile 0.2s linear 1 forwards;
   }
 }
 
 #move-back {
-  animation: move-back 0.3s linear 1 forwards;
+  animation: move-back 0.2s linear 1 forwards;
   @include respond-to(mobile) {
     animation: move-back-mobile 0.2s linear 1 forwards;
   }
 }
 
 #expand {
-  animation: expand 0.3s 0.35s linear 1 forwards;
+  animation: expand 0.2s 0.25s linear 1 forwards;
   @include respond-to(mobile)  {
-    animation: expand-mobile 0.2s linear 1 forwards;
+    animation: expand-mobile 0.2s 0.25s linear 1 forwards;
   }
 }
 
 #shrink {
-  animation: shrink 0.3s linear 1 forwards;
+  animation: shrink 0.2s linear 1 forwards;
   @include respond-to(mobile) {
     animation: shrink-mobile 0.2s linear 1 forwards;
   }
 }
-
 
 // animations for mail
 
