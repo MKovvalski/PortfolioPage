@@ -48,6 +48,11 @@
     height: 0px;
     background-color: $color-primary;
     z-index: 4;
+  }
+}
+
+.main-nav-after {
+  @include respond-to(mobile) {
     @include bottom-arrow(after, 100%, 39%, 40px, 1, $color-primary);
   }
 }
@@ -73,9 +78,30 @@
 
 .menu-burger {
   @include respond-to(mobile) {
+    //background-color: white;
     align-self: flex-end;
     margin: 10px 10px 0 0;
     display: block;
     z-index: 5;
   }
+}
+
+
+// testing animations for logo
+
+.first {
+  transform-origin: 0 0;
+  transition: all 0.2s;
+}
+
+.third {
+  transform-origin: 100% 100%;
+}
+
+.small-first {
+  transform-origin: 100% 100%;
+}
+
+.small-second {
+  transform-origin: 0 100%;
 }
