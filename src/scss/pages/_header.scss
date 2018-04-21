@@ -8,7 +8,6 @@
 .main-header {
   background-size: cover;
   height: 640px;
-  margin-top: 20px;
   @include component-container($color-secondary);
   @include flex-box(column, center, center);
   @include bottom-arrow(after, 100%, 46%, 40px, 1, $color-secondary);

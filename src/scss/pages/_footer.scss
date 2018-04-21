@@ -3,7 +3,6 @@
 .main-footer {
   @include component-container($color-tertiary);
   @include flex-box(column, center, center);
-  margin-bottom: 20px;
 }
 
 .footer-title {

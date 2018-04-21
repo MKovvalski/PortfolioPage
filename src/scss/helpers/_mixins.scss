@@ -5,11 +5,10 @@
 // main-element
 
 @mixin component-container ($background-color) {
-  width: 90%;
+  width: 100%;
   max-width: 1024px;
   position: relative;
   background-color: $background-color;
-  box-shadow: $box-shadow-container;
 }
 
 // bottom-arrow :after element

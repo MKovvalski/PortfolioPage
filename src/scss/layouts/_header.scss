@@ -34,6 +34,9 @@
   @include respond-to(mobile) {
     margin-top: 5px;
     width: 60%;
+    li:hover {
+      box-shadow: none;
+    }
   }
 }
 
@@ -45,6 +48,7 @@
     height: 0px;
     background-color: $color-primary;
     z-index: 4;
+    @include bottom-arrow(after, 100%, 39%, 40px, 1, $color-primary);
   }
 }
 
@@ -60,6 +64,9 @@
     }
      li a {
        font-size: 30px;
+       &:hover {
+         color: white;
+       }
     }
   }
 }

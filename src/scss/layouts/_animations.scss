@@ -122,41 +122,49 @@
 
 // id's for mobile nav
 
-#elongate {
-  animation: elongate 0.3s linear 1 forwards;
+#elongate-mobile {
+  @include respond-to(mobile) {
+    animation: elongate-mobile 0.3s linear 1 forwards;
+  }
 }
 
-#shorten {
-  animation: shorten 0.3s linear 1 forwards;
+#shorten-mobile {
+  @include respond-to(mobile) {
+    animation: shorten-mobile 0.3s linear 1 forwards;
+  }
 }
 
-#bounce {
-  animation: bounce 0.2s 0.35s linear 1 forwards;
+#bounce-mobile {
+  @include respond-to(mobile) {
+    animation: bounce-mobile 0.2s 0.35s linear 1 forwards;
+  }
 }
 
-#bounce-back {
-  animation: bounce-back 0.5s linear 1 forwards;
+#bounce-back-mobile {
+  @include respond-to(mobile) {
+    animation: bounce-back-mobile 0.5s linear 1 forwards;
+  }
 }
 
 // animations for mobile nav
 
 
-@keyframes elongate {
+@keyframes elongate-mobile {
   100% {
-    height: 100vh;
+    height: 100%;
   }
 }
 
-@keyframes shorten {
+@keyframes shorten-mobile {
   0% {
-    height: 100vh;
+    height: 100%;
   }
   100% {
-    height: 0vh;
+    height: 0;
   }
 }
 
-@keyframes bounce {
+@keyframes bounce-mobile {
   0% {
     transform: translate(600px, 0);
   }
@@ -165,12 +173,12 @@
   }
 }
 
-@keyframes bounce-back {
+@keyframes bounce-back-mobile {
   0% {
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(0, -1000px);
+    transform: translate(-1000px, 0);
   }
 }
 

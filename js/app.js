@@ -79,12 +79,11 @@ __webpack_require__(2);
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  //sweetScroll
+  // sweetScroll
 
   const scroller = new __WEBPACK_IMPORTED_MODULE_0_sweet_scroll___default.a({
     duration: 1500,
-    easing: 'easeOutQuint',
-    updateURL: 'replace'
+    easing: 'easeOutQuint'
   });
 
   //Show Mobile Menu
@@ -100,20 +99,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   arrayOfNavPositions.forEach(e => {
     e.addEventListener("click", () => {
-      mainNav.id = "shorten";
+      mainNav.id = "shorten-mobile";
       arrayOfNavPositions.forEach(e => {
-        e.id = "bounce-back";
+        e.id = "bounce-back-mobile";
       });
     });
   });
 
   menuBurger.addEventListener("click", () => {
     switch (mainNav.id) {
-      case "elongate":
+      case "elongate-mobile":
         arrayOfNavPositions.forEach(e => {
-          e.id = "bounce-back";
+          e.id = "bounce-back-mobile";
         });
-        mainNav.id = "shorten";
+        setTimeout(() => {
+          mainNav.id = "shorten-mobile";
+        }, 250);
+        // mainNav.id = "shorten-mobile";
         // first.id = "rotate-counter-left";
         // second.id = "move-down";
         // smallFirst.id = "rotate-counter-downward-right";
@@ -122,9 +124,9 @@ document.addEventListener("DOMContentLoaded", () => {
         break;
       default:
         arrayOfNavPositions.forEach(e => {
-          e.id = "bounce";
+          e.id = "bounce-mobile";
         });
-        mainNav.id = "elongate";
+        mainNav.id = "elongate-mobile";
       // first.id = "rotate-left";
       // second.id = "move-up";
       // smallFirst.id = "rotate-downward-right";

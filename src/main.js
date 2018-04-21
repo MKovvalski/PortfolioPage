@@ -6,12 +6,11 @@ require('./scss/main.scss');
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  //sweetScroll
+  // sweetScroll
 
   const scroller = new SweetScroll({
     duration: 1500,
-    easing: 'easeOutQuint',
-    updateURL: 'replace'
+    easing: 'easeOutQuint'
   });
 
   //Show Mobile Menu
@@ -25,40 +24,43 @@ document.addEventListener("DOMContentLoaded", () => {
   // const smallSecond = document.querySelector(".small-second");
   // const third = document.querySelector(".third");
 
-  arrayOfNavPositions.forEach( (e) => {
-    e.addEventListener("click", () => {
-      mainNav.id = "shorten";
-      arrayOfNavPositions.forEach( (e) => {
-        e.id = "bounce-back";
-      })
-    });
-  });
-
-  menuBurger.addEventListener("click", () => {
-    switch (mainNav.id) {
-      case "elongate":
-            arrayOfNavPositions.forEach( (e) => {
-              e.id = "bounce-back";
-            });
-            mainNav.id = "shorten";
-            // first.id = "rotate-counter-left";
-            // second.id = "move-down";
-            // smallFirst.id = "rotate-counter-downward-right";
-            // smallSecond.id = "rotate-counter-downward-left";
-            // third.id = "rotate-counter-right";
-            break;
-      default:
+    arrayOfNavPositions.forEach( (e) => {
+      e.addEventListener("click", () => {
+        mainNav.id = "shorten-mobile";
         arrayOfNavPositions.forEach( (e) => {
-          e.id = "bounce";
-        });
-        mainNav.id = "elongate";
+            e.id = "bounce-back-mobile";
+        })
+      });
+    });
+
+    menuBurger.addEventListener("click", () => {
+      switch (mainNav.id) {
+        case "elongate-mobile":
+          arrayOfNavPositions.forEach( (e) => {
+            e.id = "bounce-back-mobile";
+          });
+          setTimeout(() => {
+            mainNav.id = "shorten-mobile";
+          },250);
+          // mainNav.id = "shorten-mobile";
+          // first.id = "rotate-counter-left";
+          // second.id = "move-down";
+          // smallFirst.id = "rotate-counter-downward-right";
+          // smallSecond.id = "rotate-counter-downward-left";
+          // third.id = "rotate-counter-right";
+          break;
+        default:
+          arrayOfNavPositions.forEach( (e) => {
+            e.id = "bounce-mobile";
+          });
+          mainNav.id = "elongate-mobile";
         // first.id = "rotate-left";
         // second.id = "move-up";
         // smallFirst.id = "rotate-downward-right";
         // smallSecond.id = "rotate-downward-left";
         // third.id = "rotate-right";
-    }
-  });
+      }
+    });
 
   // toggles for header mail animations
 
