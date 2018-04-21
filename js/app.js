@@ -92,7 +92,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const mainNav = document.querySelector(".main-nav");
   const arrayOfNavPositions = document.querySelectorAll(".menu-list li");
   const first = document.querySelector(".first");
-  // const second = document.querySelector(".menu-burger-line-wrapper");
   const smallFirst = document.querySelector(".small-first");
   const smallSecond = document.querySelector(".small-second");
   const third = document.querySelector(".third");
@@ -151,11 +150,13 @@ document.addEventListener("DOMContentLoaded", () => {
   mailIcon.addEventListener("click", function () {
     switch (mailIcon.id) {
       case "move-left":
+        mailExpander.style.boxShadow = "none";
         mailExpander.id = "shrink";
         mailIcon.id = "move-back";
         mailExpander.innerText = "";
         break;
       default:
+        mailExpander.style.boxShadow = "0px 13px 21px -7px rgba(0, 0, 0, 0.3)";
         mailExpander.id = "expand";
         mailIcon.id = "move-left";
         setTimeout(() => {

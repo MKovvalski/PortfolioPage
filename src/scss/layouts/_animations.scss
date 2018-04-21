@@ -189,43 +189,63 @@
 // id's for menu burger
 
 #move-up {
-  animation: move-up 0.2s linear 1 forwards;
+  @include respond-to(mobile) {
+    animation: move-up 0.2s linear 1 forwards;
+  }
 }
 
 #move-down {
-  animation: move-down 0.2s linear 1 forwards;
+  @include respond-to(mobile) {
+    animation: move-down 0.2s linear 1 forwards;
+  }
 }
 
 #rotate-left {
-  animation: rotate-left 0.2s linear 1 forwards;
+  @include respond-to(mobile) {
+    animation: rotate-left 0.2s linear 1 forwards;
+  }
 }
 
 #rotate-counter-left {
-  animation: rotate-counter-left 0.2s linear 1 forwards;
+  @include respond-to(mobile) {
+    animation: rotate-counter-left 0.2s linear 1 forwards;
+  }
 }
 
 #rotate-right {
-  animation: rotate-right 0.2s linear 1 forwards;
+  @include respond-to(mobile) {
+    animation: rotate-right 0.2s linear 1 forwards;
+  }
 }
 
 #rotate-counter-right {
-  animation: rotate-counter-right 0.2s linear 1 forwards;
+  @include respond-to(mobile) {
+    animation: rotate-counter-right 0.2s linear 1 forwards;
+  }
 }
 
 #rotate-downward-right {
-  animation: rotate-downward-right 0.2s linear 1 forwards;
+  @include respond-to(mobile) {
+    animation: rotate-downward-right 0.2s linear 1 forwards;
+  }
 }
 
 #rotate-counter-downward-right {
-  animation: rotate-counter-downward-right 0.2s linear 1 forwards;
+  @include respond-to(mobile) {
+    animation: rotate-counter-downward-right 0.2s linear 1 forwards;
+  }
 }
 
 #rotate-downward-left {
-  animation: rotate-downward-left 0.2s linear 1 forwards;
+  @include respond-to(mobile) {
+    animation: rotate-downward-left 0.2s linear 1 forwards;
+  }
 }
 
 #rotate-counter-downward-left {
-  animation: rotate-counter-downward-left 0.2s linear 1 forwards;
+  @include respond-to(mobile) {
+    animation: rotate-counter-downward-left 0.2s linear 1 forwards;
+  }
 }
 
 // animations for menu burger

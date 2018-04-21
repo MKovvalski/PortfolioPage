@@ -873,6 +873,12 @@ body {
     display: block;
     z-index: 5; } }
 
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  .mail-expand {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    font-size: 5vw; } }
+
 .first {
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
@@ -1348,45 +1354,55 @@ body {
     -webkit-transform: translate(-1000px, 0);
             transform: translate(-1000px, 0); } }
 
-#move-up {
-  -webkit-animation: move-up 0.2s linear 1 forwards;
-          animation: move-up 0.2s linear 1 forwards; }
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  #move-up {
+    -webkit-animation: move-up 0.2s linear 1 forwards;
+            animation: move-up 0.2s linear 1 forwards; } }
 
-#move-down {
-  -webkit-animation: move-down 0.2s linear 1 forwards;
-          animation: move-down 0.2s linear 1 forwards; }
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  #move-down {
+    -webkit-animation: move-down 0.2s linear 1 forwards;
+            animation: move-down 0.2s linear 1 forwards; } }
 
-#rotate-left {
-  -webkit-animation: rotate-left 0.2s linear 1 forwards;
-          animation: rotate-left 0.2s linear 1 forwards; }
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  #rotate-left {
+    -webkit-animation: rotate-left 0.2s linear 1 forwards;
+            animation: rotate-left 0.2s linear 1 forwards; } }
 
-#rotate-counter-left {
-  -webkit-animation: rotate-counter-left 0.2s linear 1 forwards;
-          animation: rotate-counter-left 0.2s linear 1 forwards; }
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  #rotate-counter-left {
+    -webkit-animation: rotate-counter-left 0.2s linear 1 forwards;
+            animation: rotate-counter-left 0.2s linear 1 forwards; } }
 
-#rotate-right {
-  -webkit-animation: rotate-right 0.2s linear 1 forwards;
-          animation: rotate-right 0.2s linear 1 forwards; }
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  #rotate-right {
+    -webkit-animation: rotate-right 0.2s linear 1 forwards;
+            animation: rotate-right 0.2s linear 1 forwards; } }
 
-#rotate-counter-right {
-  -webkit-animation: rotate-counter-right 0.2s linear 1 forwards;
-          animation: rotate-counter-right 0.2s linear 1 forwards; }
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  #rotate-counter-right {
+    -webkit-animation: rotate-counter-right 0.2s linear 1 forwards;
+            animation: rotate-counter-right 0.2s linear 1 forwards; } }
 
-#rotate-downward-right {
-  -webkit-animation: rotate-downward-right 0.2s linear 1 forwards;
-          animation: rotate-downward-right 0.2s linear 1 forwards; }
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  #rotate-downward-right {
+    -webkit-animation: rotate-downward-right 0.2s linear 1 forwards;
+            animation: rotate-downward-right 0.2s linear 1 forwards; } }
 
-#rotate-counter-downward-right {
-  -webkit-animation: rotate-counter-downward-right 0.2s linear 1 forwards;
-          animation: rotate-counter-downward-right 0.2s linear 1 forwards; }
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  #rotate-counter-downward-right {
+    -webkit-animation: rotate-counter-downward-right 0.2s linear 1 forwards;
+            animation: rotate-counter-downward-right 0.2s linear 1 forwards; } }
 
-#rotate-downward-left {
-  -webkit-animation: rotate-downward-left 0.2s linear 1 forwards;
-          animation: rotate-downward-left 0.2s linear 1 forwards; }
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  #rotate-downward-left {
+    -webkit-animation: rotate-downward-left 0.2s linear 1 forwards;
+            animation: rotate-downward-left 0.2s linear 1 forwards; } }
 
-#rotate-counter-downward-left {
-  -webkit-animation: rotate-counter-downward-left 0.2s linear 1 forwards;
-          animation: rotate-counter-downward-left 0.2s linear 1 forwards; }
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  #rotate-counter-downward-left {
+    -webkit-animation: rotate-counter-downward-left 0.2s linear 1 forwards;
+            animation: rotate-counter-downward-left 0.2s linear 1 forwards; } }
 
 @-webkit-keyframes move-up {
   100% {
