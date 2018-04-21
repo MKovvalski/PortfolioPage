@@ -83,7 +83,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const scroller = new __WEBPACK_IMPORTED_MODULE_0_sweet_scroll___default.a({
     duration: 1500,
-    easing: 'easeOutQuint'
+    easing: 'easeOutQuint',
+    header: "header"
   });
 
   //Show Mobile Menu

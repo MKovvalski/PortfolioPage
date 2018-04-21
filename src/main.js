@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const scroller = new SweetScroll({
     duration: 1500,
-    easing: 'easeOutQuint'
+    easing: 'easeOutQuint',
+    header: "header"
   });
 
   //Show Mobile Menu
