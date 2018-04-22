@@ -6,20 +6,22 @@
 @import "helpers/reset.scss";
 
 //pages
+@import "pages/container.scss";
 @import "pages/header.scss";
 @import "pages/about.scss";
 @import "pages/skills.scss";
 @import "pages/projects.scss";
+@import "pages/contact.scss";
 @import "pages/footer.scss";
-@import "pages/container.scss";
 
 //layouts
+@import "layouts/container.scss";
 @import "layouts/header.scss";
 @import "layouts/about.scss";
 @import "layouts/skills.scss";
 @import "layouts/projects.scss";
+@import "layouts/contact.scss";
 @import "layouts/footer.scss";
-@import "layouts/container.scss";
 @import "layouts/mobile-nav.scss";
 @import "layouts/animations.scss";
 

@@ -83,11 +83,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const scroller = new __WEBPACK_IMPORTED_MODULE_0_sweet_scroll___default.a({
     duration: 1500,
-    easing: 'easeOutQuint',
-    header: "header"
+    easing: 'easeOutQuint'
   });
 
-  //Show Mobile Menu
+  // ---- close the Mobile Menu and change burger after click on one of the links
 
   const menuBurger = document.querySelector(".menu-burger");
   const mainNav = document.querySelector(".main-nav");
@@ -112,6 +111,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+  // ---- show/hide Mobile Menu after clicking on the burger
 
   menuBurger.addEventListener("click", () => {
     switch (mainNav.id) {
@@ -143,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // toggles for header mail animations
+  // shows/hides email address after clicking on gmail icon
 
   const mailIcon = document.querySelector(".header-gmail-logo");
   const mailExpander = document.querySelector(".mail-expand");

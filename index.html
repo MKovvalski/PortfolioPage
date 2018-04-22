@@ -13,7 +13,7 @@
 
   <!-------- Header -------->
 
-  <header class = "main-header" id = "header" data-scroll-header>
+  <header class = "main-header">
     <div class = "menu-burger"> <!--burger menu for mobile -->
       <div class = "visually-hidden">menu</div>
       <div class = "menu-burger-line first"></div>
@@ -124,7 +124,30 @@
 
   <!------- Contact -------->
 
-  <footer class = "main-footer" id = "contact">
+  <section class = "main-form" id = "contact">
+    <div class = "contact-form-wrapper">
+      <h2 class = "contact-form-title">Contact me</h2>
+      <form action="" method = "" class = "contact-form">
+        <div class = "contact-form-field">
+          <label for="formName" class = "field-label">Imię</label>
+          <input type="text" id="formName" name="name">
+        </div>
+        <div class = "contact-form-field">
+          <label for="formEmail" class = "field-label">Email</label>
+          <input type="email" id="formEmail" name="email">
+        </div>
+        <div class = "contact-form-field">
+          <label for="formMessage" class = "field-label">Wiadomość</label>
+          <textarea id="formMessage" name="message"></textarea>
+        </div>
+        <button type = "submit" class = "contact-form-button">send</button>
+      </form>
+    </div>
+  </section>
+
+  <!------- footer -------->
+
+  <footer class = "main-footer">
     <small class = "footer-title">© 2018 By Mateusz Kowalski. All rights reserved.</small>
     <ul class = "contact-list">
       <li class = "contact-logo gmail">
