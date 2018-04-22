@@ -32,7 +32,7 @@
       </ul>
     </nav>
       <section class = "title-and-contact">
-        <span class = "name-and-surname">Matuesz Kowalski</span>
+        <span class = "name-and-surname">Mateusz Kowalski</span>
         <span class = "position">Junior Front-End Developer</span>
         <ul class = "header-contact-list">
           <li class = "header-gmail-logo"><img src="./imgs/gmail.png" alt=""><div class = "mail-expand"></div></li>
@@ -127,20 +127,20 @@
   <section class = "main-form" id = "contact">
     <div class = "contact-form-wrapper">
       <h2 class = "contact-form-title">Contact me</h2>
-      <form action="" method = "" class = "contact-form">
+      <form action="https://formspree.io/matt.kowalski.public@gmail.com" method = "POST" class = "contact-form">
         <div class = "contact-form-field">
           <label for="formName" class = "field-label">Imię</label>
-          <input type="text" id="formName" name="name">
+          <input class = "form-input-name" type="text" id="formName" name="name">
         </div>
         <div class = "contact-form-field">
           <label for="formEmail" class = "field-label">Email</label>
-          <input type="email" id="formEmail" name="email">
+          <input class = "form-input-email" type="email" id="formEmail" name="email">
         </div>
         <div class = "contact-form-field">
           <label for="formMessage" class = "field-label">Wiadomość</label>
-          <textarea id="formMessage" name="message"></textarea>
+          <textarea class = "form-input-text" id="formMessage" name="message"></textarea>
         </div>
-        <button type = "submit" class = "contact-form-button">send</button>
+        <button type = "submit" value = "send" class = "contact-form-button">send</button>
       </form>
     </div>
   </section>

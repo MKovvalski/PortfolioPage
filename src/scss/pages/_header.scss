@@ -39,11 +39,13 @@
 }
 
 .name-and-surname {
-  @include header-titles($font-size-title, 900, $spacing-title, $color-font-title, $text-shadow-main-title);
+  @include header-titles($font-size-title, 900, $spacing-title, $color-font-title);
+  text-shadow: $text-shadow-main-title;
 }
 
 .position {
-  @include header-titles($font-size-secondary-title, 600, $spacing-secondary-title, $color-font-subtitle, $text-shadow);
+  @include header-titles($font-size-secondary-title, 600, $spacing-secondary-title, $color-font-subtitle);
+  text-shadow: $text-shadow;
 }
 
 .main-nav {
@@ -70,7 +72,8 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  @include header-titles(1.3rem, 500, $spacing-nav-elements, $color-font-subtitle, $text-shadow);
+  @include header-titles(1.3rem, 500, $spacing-nav-elements, $color-font-subtitle);
+  text-shadow: $text-shadow;
   transition: all 0.3s;
   &:hover {
     color: $color-tertiary;

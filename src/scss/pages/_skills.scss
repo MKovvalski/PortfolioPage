@@ -10,7 +10,8 @@
 
 .section-title {
   margin-top: 50px;
-  @include section-title($font-size-section-title + 0.2rem, $color-font-text-links, $text-shadow, $border-subtitles);
+  font-weight: 700;
+  @include section-title($font-size-section-title + 0.2rem, $color-font-text-links, none, $border-subtitles);
 }
 
 .skill-list {

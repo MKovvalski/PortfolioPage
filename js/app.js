@@ -166,6 +166,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 440);
     }
   });
+
+  // validation for contact form
+
+  const inputName = document.querySelector(".form-input-name");
+  const inputMail = document.querySelector(".form-input-email");
+  const inputText = document.querySelector(".form-input-text");
+  const sumbitButton = document.querySelector(".contact-form-button");
+
+  // sumbitButton.addEventListener("onchange", () => {
+  //   if (inputName.value)
+  // })
+
 });
 
 /***/ }),

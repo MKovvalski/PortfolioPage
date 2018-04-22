@@ -14,7 +14,8 @@
 }
 
 .article-title {
-  @include section-title($font-size-section-title, $color-font-text-links, $text-shadow, $border-subtitles)
+  font-weight: 800;
+  @include section-title($font-size-section-title, $color-font-text-links, none, $border-subtitles)
 }
 
 .description {
@@ -37,8 +38,10 @@
 }
 
 .trait-title {
+  width: 250px;
   text-transform: uppercase;
-  @include header-titles($font-size-sub-text, 700, $spacing-secondary-title, $color-font-text-links, $text-shadow);
+  border-bottom: 3px solid $color-primary;
+  @include header-titles($font-size-sub-text, 800, $spacing-secondary-title, $color-font-text-links);
 }
 
 .trait-description {

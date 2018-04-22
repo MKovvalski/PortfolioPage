@@ -6,7 +6,7 @@
 }
 
 .projects-wrapper {
-  margin-top: 50px;
+  margin-top: 70px;
   margin-bottom: 60px;
   @include flex-box(row, space-around, flex-start);
 }
@@ -29,7 +29,7 @@
   text-align: center;
   border-radius: 5px 5px 0 0;
   background-color: $color-primary;
-  @include header-titles($font-size-base-text, 500, $spacing-subtitle, $color-font-subtitle, $text-shadow);
+  @include header-titles($font-size-base-text, 500, $spacing-subtitle, $color-font-subtitle);
 }
 
 .project-peek {
@@ -49,6 +49,7 @@
   text-decoration: none;
   font-size: $font-size-sub-text;
   color: $color-font-text;
+  transition: all 0.3s;
   span {
     font-weight: 900;
     color: $color-font-text-links;

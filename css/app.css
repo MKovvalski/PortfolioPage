@@ -491,12 +491,13 @@ body {
           align-items: center; }
 
 .article-title {
-  width: 120px;
+  font-weight: 800;
+  width: 200px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #333333;
-  text-shadow: 1px 0 #bababa, 1.1px 0 black;
+  text-shadow: none;
   border-bottom: 4px solid #FFD447; }
 
 .description {
@@ -528,12 +529,13 @@ body {
   margin-bottom: 30px; }
 
 .trait-title {
+  width: 250px;
   text-transform: uppercase;
+  border-bottom: 3px solid #39CE98;
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 1px;
-  color: #333333;
-  text-shadow: 1px 0 #bababa, 1.1px 0 black; }
+  color: #333333; }
 
 .trait-description {
   color: #595959; }
@@ -571,12 +573,13 @@ body {
 
 .section-title {
   margin-top: 50px;
-  width: 120px;
+  font-weight: 700;
+  width: 200px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #333333;
-  text-shadow: 1px 0 #bababa, 1.1px 0 black;
+  text-shadow: none;
   border-bottom: 4px solid #FFD447; }
 
 .skill-list {
@@ -641,7 +644,7 @@ body {
     z-index: 1; }
 
 .projects-wrapper {
-  margin-top: 50px;
+  margin-top: 70px;
   margin-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -678,8 +681,7 @@ body {
   font-size: 1.3rem;
   font-weight: 500;
   letter-spacing: 0.5px;
-  color: white;
-  text-shadow: 1px 0 #bababa, 1.1px 0 black; }
+  color: white; }
 
 .project-peek {
   width: 100%;
@@ -696,7 +698,9 @@ body {
   margin-left: 10px;
   text-decoration: none;
   font-size: 1.1rem;
-  color: #595959; }
+  color: #595959;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .project-github-link span {
     font-weight: 900;
     color: #333333;
@@ -786,7 +790,7 @@ body {
   text-transform: uppercase;
   color: #595959;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-top: 20px;
   margin-bottom: 20px; }
 
@@ -817,7 +821,9 @@ body {
   border-radius: 5px;
   height: 40px;
   width: 100px;
-  border: 2px solid #ff4d4d;
+  border: 1px solid #ff4d4d;
+  -webkit-box-shadow: 1px 1px #e60000, 1.1px 1.1px #800000;
+          box-shadow: 1px 1px #e60000, 1.1px 1.1px #800000;
   font-weight: 600;
   text-transform: uppercase;
   color: white;
@@ -850,8 +856,7 @@ body {
   font-size: 0.95rem;
   font-weight: 500;
   letter-spacing: 0.5px;
-  color: #bababa;
-  text-shadow: none; }
+  color: #bababa; }
 
 .contact-list {
   width: 35%;
