@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   submitButton.disabled = true;
 
-  function inputCheck(element) {
+  function inputCheckName(element) {
     element.addEventListener("input", () => {
       if (element.value !== "" && inputMail.value.indexOf('@') > -1) {
         submitButton.disabled = false;
@@ -194,8 +194,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  inputCheck(inputName);
-  inputCheck(inputMail);
+  function inputCheckMail(element) {
+    element.addEventListener("input", () => {
+      if (inputName.value !== "" && element.value.indexOf('@') > -1) {
+        submitButton.disabled = false;
+        submitButton.classList.remove("button-hover-disabled");
+        submitButton.classList.add("button-hover-enabled");
+        submitButton.style.backgroundColor = "#00cc44";
+        submitButton.style.border = "1px solid #00cc44";
+        submitButton.style.boxShadow = "1px 1px #00802b, 1.1px 1.1px #003311";
+      } else {
+        submitButton.disabled = true;
+        submitButton.classList.remove("button-hover-enabled");
+        submitButton.classList.add("button-hover-disabled");
+        submitButton.style.backgroundColor = "#ff4d4d";
+        submitButton.style.border = "1px solid #ff4d4d";
+        submitButton.style.boxShadow = "1px 1px #e60000, 1.1px 1.1px #800000";
+      }
+    });
+  }
+
+  inputCheckName(inputName);
+  inputCheckMail(inputMail);
 });
 
 /***/ }),
