@@ -68,7 +68,7 @@
   }
 }
 
-.nav-title a {
+.nav-title {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -87,6 +87,10 @@
     position: relative;
     z-index: 3;
   }
+}
+
+.gmail-logo {
+  cursor: pointer;
 }
 
 .mail-expand {

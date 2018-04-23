@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const scroller = new SweetScroll({
       duration: 1500,
       easing: 'easeOutQuint',
+      updateURl: true
     });
 
     // ---- close the Mobile Menu and change burger after click on one of the links
@@ -93,6 +94,35 @@ document.addEventListener("DOMContentLoaded", () => {
           },440);
       }
     });
+
+    const inputName = document.querySelector(".form-input-name");
+    const inputMail = document.querySelector(".form-input-email");
+    const submitButton = document.querySelector(".contact-form-button");
+
+    submitButton.disabled = true;
+
+    function inputCheck (element) {
+      element.addEventListener("input", () => {
+        if (element.value !== "" && inputMail.value.indexOf('@') > -1) {
+          submitButton.disabled = false;
+          submitButton.classList.remove("button-hover-disabled");
+          submitButton.classList.add("button-hover-enabled");
+          submitButton.style.backgroundColor = "#00cc44";
+          submitButton.style.border = "1px solid #00cc44";
+          submitButton.style.boxShadow = "1px 1px #00802b, 1.1px 1.1px #003311";
+        } else {
+          submitButton.disabled = true;
+          submitButton.classList.remove("button-hover-enabled");
+          submitButton.classList.add("button-hover-disabled");
+          submitButton.style.backgroundColor = "#ff4d4d";
+          submitButton.style.border = "1px solid #ff4d4d";
+          submitButton.style.boxShadow = "1px 1px #e60000, 1.1px 1.1px #800000";
+        }
+      })
+    }
+
+    inputCheck(inputName);
+    inputCheck(inputMail);
 
 });
 
