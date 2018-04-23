@@ -855,7 +855,7 @@ body {
 
 .footer-title {
   margin-top: 40px;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.5px;
   color: #bababa; }
@@ -879,8 +879,8 @@ body {
           align-items: center; }
 
 .contact-logo {
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%; }
 
 .mail-expander {
