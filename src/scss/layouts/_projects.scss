@@ -20,7 +20,7 @@
 
 .project {
   @include respond-to(mobile) {
-    width: 80%;
+    width: 85%;
     max-width: 830px;
     margin-bottom: 30px;
     @include flex-box(column, center, center);

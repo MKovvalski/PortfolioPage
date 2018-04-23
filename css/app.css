@@ -798,6 +798,7 @@ body {
   width: 80%;
   margin-bottom: 40px; }
   .contact-form-field input {
+    color: #333333;
     height: 30px;
     width: 100%;
     border: none;
@@ -809,7 +810,8 @@ body {
     width: 100%;
     border: none;
     border-bottom: 4px solid #FFD447;
-    resize: none; }
+    resize: none;
+    color: #333333; }
     .contact-form-field textarea:focus {
       outline: none; }
 
@@ -879,8 +881,7 @@ body {
 .contact-logo {
   width: 45px;
   height: 45px;
-  border-radius: 50%;
-  background-color: white; }
+  border-radius: 50%; }
 
 .mail-expander {
   display: none;
@@ -1066,10 +1067,24 @@ body {
   .trait {
     width: 100%;
     text-align: center;
-    font-size: 1.3rem; } }
+    font-size: 1.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 @media only screen and (min-width: 300px) and (max-width: 480px) {
   .trait-title {
+    width: 80%;
     font-weight: 600;
     font-size: 1.4rem; } }
 
@@ -1128,7 +1143,7 @@ body {
 
 @media only screen and (min-width: 300px) and (max-width: 480px) {
   .project {
-    width: 80%;
+    width: 85%;
     max-width: 830px;
     margin-bottom: 30px;
     display: -webkit-box;
@@ -1168,10 +1183,22 @@ body {
     font-size: 1.3rem; } }
 
 /*stylelint-disable*/
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  .main-form:after {
+    right: 39%; } }
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  .contact-form-wrapper {
+    width: 90%; } }
+
 /*stylelint-disable*/
 @media only screen and (min-width: 300px) and (max-width: 480px) {
   .main-footer {
     width: 100%; } }
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  .footer-title {
+    font-size: 14px; } }
 
 @media only screen and (min-width: 300px) and (max-width: 480px) {
   .contact-list {
@@ -1179,8 +1206,8 @@ body {
 
 @media only screen and (min-width: 300px) and (max-width: 480px) {
   .contact-logo {
-    width: 52px;
-    height: 52px; } }
+    width: 40px;
+    height: 40px; } }
 
 /*stylelint-disable*/
 @media only screen and (min-width: 300px) and (max-width: 480px) {

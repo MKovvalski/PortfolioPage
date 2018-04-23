@@ -1,1 +1,16 @@
 /*stylelint-disable*/
+
+
+.main-form {
+  @include respond-to(mobile) {
+    &:after {
+      right: 39%;
+    }
+  }
+}
+
+.contact-form-wrapper {
+  @include respond-to(mobile) {
+    width: 90%;
+  }
+}
