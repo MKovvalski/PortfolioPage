@@ -51,7 +51,7 @@
     box-shadow: 0px 2px 21px -15px #fff9e6;
   }
   50% {
-    box-shadow: 0px 2px 21px -2px #fff9e6;
+    box-shadow: 0px 2px 21px 4px #fff9e6;
   }
   100% {
     box-shadow: 0px 2px 21px -15px #fff9e6;
@@ -128,18 +128,6 @@
 
 // id's for menu burger
 
-#move-up {
-  @include respond-to(mobile) {
-    animation: move-up 0.2s linear 1 forwards;
-  }
-}
-
-#move-down {
-  @include respond-to(mobile) {
-    animation: move-down 0.2s linear 1 forwards;
-  }
-}
-
 #rotate-left {
   @include respond-to(mobile) {
     animation: rotate-left 0.2s linear 1 forwards;
@@ -190,25 +178,10 @@
 
 // animations for menu burger
 
-@keyframes move-up {
-  100% {
-    transform: translate(0, -2.5px);
-  }
-}
-
-@keyframes move-down {
-  0% {
-    transform: translate(0, -2.5px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
 @keyframes rotate-left {
   100% {
     width: 40px;
-    transform: translate(7px, -1px) rotate(90deg);
+    transform: translate(7px, -3px) rotate(90deg);
 
   }
 }
@@ -216,7 +189,7 @@
 @keyframes rotate-counter-left {
   0% {
     width: 40px;
-    transform: translate(7px, -1px) rotate(90deg);
+    transform: translate(7px, -3px) rotate(90deg);
 
   }
   100% {
@@ -228,14 +201,14 @@
 @keyframes rotate-right {
   100% {
     width: 40px;
-    transform: translate(-6px, 0) rotate(90deg);
+    transform: translate(-6px, 1px) rotate(90deg);
   }
 }
 
 @keyframes rotate-counter-right {
   0% {
     width: 40px;
-    transform: translate(-6px, 0px) rotate(90deg);
+    transform: translate(-6px, 1px) rotate(90deg);
   }
   100% {
     width: 45px;

@@ -17,6 +17,9 @@
   display: none;
   @include respond-to(mobile) {
     @include flex-box(column, space-around, center);
+    position: absolute;
+    top: 5px;
+    right: 5px;
   }
 }
 

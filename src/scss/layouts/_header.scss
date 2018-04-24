@@ -14,7 +14,7 @@
 
 .title-and-contact {
   @include respond-to(mobile) {
-    height: 80%;
+    height: 100%;
   }
 }
 
@@ -114,18 +114,4 @@
 
 .small-second {
   transform-origin: 0 100%;
-}
-
-// classes for mobile gmail logo
-
-.icon-shadow-1 {
-  @include respond-to(mobile) {
-    box-shadow: $box-shadow-resting;
-  }
-}
-
-.icon-shadow-2 {
-  @include respond-to(mobile) {
-    box-shadow: $box-shadow-hover;
-  }
 }
