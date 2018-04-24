@@ -8,6 +8,7 @@
 
 .footer-title {
   @include respond-to(mobile) {
+    width: 95%;
     font-size: 14px;
   }
 }

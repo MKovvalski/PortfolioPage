@@ -10,6 +10,7 @@
 
 .short-description {
   width: 40%;
+  margin-bottom: 30px;
   @include flex-box(column, center, center);
 }
 
@@ -26,25 +27,29 @@
 }
 
 .main-traits {
-  width: 40%;
+  width: 37%;
   margin-top: 60px;
-  margin-bottom: 60px;
-  @include flex-box(column, space-betweeen, center);
+  margin-bottom: 40px;
+  @include flex-box(column, space-around, center);
 }
 
 .trait {
   width: 85%;
   margin-bottom: 30px;
+  @include flex-box(column, flex-start, center);
 }
 
 .trait-title {
-  width: 250px;
+  width: 260px;
+  text-align: center;
   text-transform: uppercase;
-  border-bottom: 3px solid $color-primary;
+  border-bottom: 3.5px solid $color-primary;
   @include header-titles($font-size-sub-text, 800, $spacing-secondary-title, $color-font-text-links);
 }
 
 .trait-description {
+  min-height: 115px;
   color: $color-font-text;
+  text-align: center;
 }
 

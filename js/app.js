@@ -171,8 +171,10 @@ document.addEventListener("DOMContentLoaded", () => {
     range.selectNode(mailText);
     window.getSelection().addRange(range);
     document.execCommand("copy");
+    // moves in the alert
     copyAlert.id = "move-in";
     window.getSelection().removeAllRanges();
+    // moves out the alert
     setTimeout(() => {
       copyAlert.id = "none";
     }, 4500);
