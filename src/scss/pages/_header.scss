@@ -73,7 +73,7 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  @include header-titles(1.3rem, 500, $spacing-nav-elements, $color-font-subtitle);
+  @include header-titles(1.3rem, 600, $spacing-nav-elements, $color-font-subtitle);
   transition: all 0.3s;
   &:hover {
     color: $color-tertiary;
@@ -116,6 +116,46 @@
   font-weight: 500;
   color: $color-font-title;
   text-align: center;
+}
+
+// alert styling
+
+.copy-alert {
+  position: fixed;
+  top: 100px;
+  right: 2000px;
+  background-color: white;
+  width: 200px;
+  height: 120px;
+  border-radius: 5px;
+  @include flex-box(column, center, center);
+  z-index: 50;
+  box-shadow: 0px 13px 21px -14px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.alert-title {
+  width: 100%;
+  font-size: 20px;
+  line-height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: $color-primary;
+  color: white;
+  border-radius: 5px 5px 0 0;
+  border-bottom: $border-projects-images;
+}
+
+.alert-text {
+  width: 90%;
+  height: 100%;
+  text-align: center;
+  color: $color-font-text;
+  font-size: 17px;
+  padding-top: 10px;
 }
 
 

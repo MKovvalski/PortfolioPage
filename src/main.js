@@ -91,13 +91,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const mailDownLoad = document.querySelector(".header-gmail-logo");
     const mailText = document.querySelector(".mail-text");
+    const copyAlert = document.querySelector(".copy-alert");
 
     mailDownLoad.addEventListener("click", () => {
       let range = document.createRange();
       range.selectNode(mailText);
       window.getSelection().addRange(range);
       document.execCommand("copy");
+      // moves in the alert
+      copyAlert.id = "move-in";
       window.getSelection().removeAllRanges();
+      // moves out the alert
+      setTimeout(() => {
+        copyAlert.id = "none"
+      },4500);
     });
 
     // changes enables/disables button on verification and changes button styles
