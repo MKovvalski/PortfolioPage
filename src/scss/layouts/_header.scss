@@ -91,13 +91,11 @@
   }
 }
 
-.mail-expand {
-  @include respond-to(mobile) {
-    box-shadow: none !important;
-    font-size: 5vw;
+.header-gmail-logo {
+  @include respond-to(mobile){
+    animation: pulse 3s linear infinite none;
   }
 }
-
 
 // classes for burger menu lines
 
@@ -116,4 +114,18 @@
 
 .small-second {
   transform-origin: 0 100%;
+}
+
+// classes for mobile gmail logo
+
+.icon-shadow-1 {
+  @include respond-to(mobile) {
+    box-shadow: $box-shadow-resting;
+  }
+}
+
+.icon-shadow-2 {
+  @include respond-to(mobile) {
+    box-shadow: $box-shadow-hover;
+  }
 }

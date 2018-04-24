@@ -77,23 +77,30 @@ document.addEventListener("DOMContentLoaded", () => {
     const mailIcon = document.querySelector(".header-gmail-logo");
     const mailExpander = document.querySelector(".mail-expand");
 
-    mailIcon.addEventListener("click", function () {
-      switch (mailIcon.id) {
-        case "move-left":
-          mailExpander.style.boxShadow = "none";
-          mailExpander.id = "shrink";
-          mailIcon.id = "move-back";
-          mailExpander.innerText = "";
-          break;
-        default:
-          mailExpander.style.boxShadow = "0px 13px 21px -7px rgba(0, 0, 0, 0.3)";
-          mailExpander.id = "expand";
-          mailIcon.id = "move-left";
-          setTimeout(() => {
-            mailExpander.innerText = "matt.kowalski.public@gmail.com";
-          },440);
-      }
+    mailIcon.addEventListener("mouseover", () => {
+      // mailExpander.style.boxShadow = "0px 13px 21px -7px rgba(0, 0, 0, 0.3)";
+      mailExpander.id = "expand";
     });
+
+    mailIcon.addEventListener("mouseout", () => {
+      mailExpander.style.boxShadow = "none";
+      mailExpander.id = "shrink";
+    });
+
+  //  copies email by clicking on gmail icon
+
+    const mailDownLoad = document.querySelector(".header-gmail-logo");
+    const mailText = document.querySelector(".mail-text");
+
+    mailDownLoad.addEventListener("click", () => {
+      let range = document.createRange();
+      range.selectNode(mailText);
+      window.getSelection().addRange(range);
+      document.execCommand("copy");
+      window.getSelection().removeAllRanges();
+    });
+
+    // changes enables/disables button on verification and changes button styles
 
     const inputName = document.querySelector(".form-input-name");
     const inputMail = document.querySelector(".form-input-email");
@@ -121,30 +128,28 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     }
 
-  function inputCheckMail (element) {
-    element.addEventListener("input", () => {
-      if (inputName.value !== "" && element.value.indexOf('@') > -1) {
-        submitButton.disabled = false;
-        submitButton.classList.remove("button-hover-disabled");
-        submitButton.classList.add("button-hover-enabled");
-        submitButton.style.backgroundColor = "#00cc44";
-        submitButton.style.border = "1px solid #00cc44";
-        submitButton.style.boxShadow = "1px 1px #00802b, 1.1px 1.1px #003311";
-      } else {
-        submitButton.disabled = true;
-        submitButton.classList.remove("button-hover-enabled");
-        submitButton.classList.add("button-hover-disabled");
-        submitButton.style.backgroundColor = "#ff4d4d";
-        submitButton.style.border = "1px solid #ff4d4d";
-        submitButton.style.boxShadow = "1px 1px #e60000, 1.1px 1.1px #800000";
-      }
-    })
-  }
+    function inputCheckMail (element) {
+      element.addEventListener("input", () => {
+        if (inputName.value !== "" && element.value.indexOf('@') > -1) {
+          submitButton.disabled = false;
+          submitButton.classList.remove("button-hover-disabled");
+          submitButton.classList.add("button-hover-enabled");
+          submitButton.style.backgroundColor = "#00cc44";
+          submitButton.style.border = "1px solid #00cc44";
+          submitButton.style.boxShadow = "1px 1px #00802b, 1.1px 1.1px #003311";
+        } else {
+          submitButton.disabled = true;
+          submitButton.classList.remove("button-hover-enabled");
+          submitButton.classList.add("button-hover-disabled");
+          submitButton.style.backgroundColor = "#ff4d4d";
+          submitButton.style.border = "1px solid #ff4d4d";
+          submitButton.style.boxShadow = "1px 1px #e60000, 1.1px 1.1px #800000";
+        }
+      })
+    }
 
     inputCheckName(inputName);
-    inputCheckMail(inputMail)
-
-
+    inputCheckMail(inputMail);
 
 });
 

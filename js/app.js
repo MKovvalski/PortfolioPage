@@ -150,23 +150,30 @@ document.addEventListener("DOMContentLoaded", () => {
   const mailIcon = document.querySelector(".header-gmail-logo");
   const mailExpander = document.querySelector(".mail-expand");
 
-  mailIcon.addEventListener("click", function () {
-    switch (mailIcon.id) {
-      case "move-left":
-        mailExpander.style.boxShadow = "none";
-        mailExpander.id = "shrink";
-        mailIcon.id = "move-back";
-        mailExpander.innerText = "";
-        break;
-      default:
-        mailExpander.style.boxShadow = "0px 13px 21px -7px rgba(0, 0, 0, 0.3)";
-        mailExpander.id = "expand";
-        mailIcon.id = "move-left";
-        setTimeout(() => {
-          mailExpander.innerText = "matt.kowalski.public@gmail.com";
-        }, 440);
-    }
+  mailIcon.addEventListener("mouseover", () => {
+    // mailExpander.style.boxShadow = "0px 13px 21px -7px rgba(0, 0, 0, 0.3)";
+    mailExpander.id = "expand";
   });
+
+  mailIcon.addEventListener("mouseout", () => {
+    mailExpander.style.boxShadow = "none";
+    mailExpander.id = "shrink";
+  });
+
+  //  copies email by clicking on gmail icon
+
+  const mailDownLoad = document.querySelector(".header-gmail-logo");
+  const mailText = document.querySelector(".mail-text");
+
+  mailDownLoad.addEventListener("click", () => {
+    let range = document.createRange();
+    range.selectNode(mailText);
+    window.getSelection().addRange(range);
+    document.execCommand("copy");
+    window.getSelection().removeAllRanges();
+  });
+
+  // changes enables/disables button on verification and changes button styles
 
   const inputName = document.querySelector(".form-input-name");
   const inputMail = document.querySelector(".form-input-email");

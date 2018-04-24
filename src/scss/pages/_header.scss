@@ -25,16 +25,17 @@
   width: 30%;
   margin-top: 25px;
   @include flex-box(row, space-between, center);
-  li {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    background-color: white;
-    border-radius: 50%;
-    transition: all 0.3s;
-    &:hover {
-      box-shadow: $box-shadow-resting;
-    }
+}
+
+.contact-link {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  background-color: white;
+  border-radius: 50%;
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: $box-shadow-resting;
   }
 }
 
@@ -73,7 +74,6 @@
   text-decoration: none;
   text-transform: uppercase;
   @include header-titles(1.3rem, 500, $spacing-nav-elements, $color-font-subtitle);
-  //text-shadow: $text-shadow;
   transition: all 0.3s;
   &:hover {
     color: $color-tertiary;
@@ -81,6 +81,7 @@
 }
 
 .header-gmail-logo {
+  cursor: pointer;
   border-radius: 50%;
   position: relative;
   img {
@@ -93,10 +94,18 @@
   cursor: pointer;
 }
 
+.mail-text {
+  text-transform: lowercase;
+}
+
 .mail-expand {
+  overflow: hidden;
+  cursor: pointer;
+  width: 50px;
   height: 50px;
   position: absolute;
   background-color: white;
+  right: 0;
   top:0;
   z-index: 1;
   border-radius: 60px 60px 60px 60px;
@@ -106,6 +115,8 @@
   font-size: 19px;
   font-weight: 500;
   color: $color-font-title;
-  text-align: end;
+  text-align: center;
 }
+
+
 

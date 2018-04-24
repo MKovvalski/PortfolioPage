@@ -4,31 +4,17 @@
 
 // id's for email
 
-#move-left {
-  animation: move-left 0.2s linear 1 forwards;
-  @include respond-to(mobile) {
-    animation: move-left-mobile 0.2s linear 1 forwards;
-  }
-}
-
-#move-back {
-  animation: move-back 0.2s linear 1 forwards;
-  @include respond-to(mobile) {
-    animation: move-back-mobile 0.2s linear 1 forwards;
-  }
-}
-
 #expand {
-  animation: expand 0.2s 0.25s linear 1 forwards;
+  animation: expand 0.15s linear 1 forwards;
   @include respond-to(mobile)  {
-    animation: expand-mobile 0.2s 0.25s linear 1 forwards;
+    animation: none;
   }
 }
 
 #shrink {
-  animation: shrink 0.2s linear 1 forwards;
+  animation: shrink 0.1s linear 1 forwards;
   @include respond-to(mobile) {
-    animation: shrink-mobile 0.2s linear 1 forwards;
+    animation: none;
   }
 }
 
@@ -43,28 +29,11 @@
     padding-right: 0;
   }
   99% {
-    padding-right: 8px;
+    padding-right: 40px;
   }
   100% {
-    padding-right: 8px;
+    padding-right: 40px;
     width: 350px;
-  }
-}
-
-@keyframes expand-mobile {
-  0% {
-    width: 50px;
-    padding-right: 0;
-  }
-  98% {
-    padding-right: 0;
-  }
-  99% {
-    padding-right: 8px;
-  }
-  100% {
-    padding-right: 8px;
-    width: 95vw;
   }
 }
 
@@ -77,44 +46,15 @@
   }
 }
 
-@keyframes shrink-mobile {
+@keyframes pulse {
   0% {
-    width: 95vw;
+    box-shadow: 0px 2px 21px -15px #fff9e6;
+  }
+  50% {
+    box-shadow: 0px 2px 21px -2px #fff9e6;
   }
   100% {
-    width: 50px;
-  }
-}
-
-@keyframes move-left {
-  100% {
-    transform: translate(-250px, 0);
-
-  }
-}
-
-@keyframes move-left-mobile {
-  100% {
-    transform: translate(-18vw, 0);
-
-  }
-}
-
-@keyframes move-back {
-  0% {
-    transform: translate(-250px, 0);
-  }
-  100% {
-    transform: translate(0,0);
-  }
-}
-
-@keyframes move-back-mobile {
-  0% {
-    transform: translate(-18vw, 0);
-  }
-  100% {
-    transform: translate(0,0);
+    box-shadow: 0px 2px 21px -15px #fff9e6;
   }
 }
 
