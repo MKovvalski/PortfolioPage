@@ -941,7 +941,8 @@ body {
   font-weight: 500;
   color: #737373;
   margin-bottom: 40px;
-  border: 2px solid #737373; }
+  border: 2px solid #737373;
+  background-color: white; }
   .contact-form-button:focus {
     outline: none; }
   .contact-form-button:hover {
@@ -1090,10 +1091,7 @@ body {
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
   .nav-title {
-    font-weight: 800;
-    color: #595959; }
-    .nav-title:hover {
-      color: #595959; } }
+    font-weight: 800; } }
 
 @media only screen and (min-width: 300px) and (max-width: 480px) {
   .main-nav-after:after {

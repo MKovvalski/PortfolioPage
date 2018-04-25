@@ -57,10 +57,6 @@
 .nav-title {
   @include respond-to(tablet) {
     font-weight: 800;
-    color: $color-tertiary;
-    &:hover {
-      color: $color-tertiary;
-    }
   }
 }
 
