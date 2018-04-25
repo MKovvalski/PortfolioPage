@@ -70,33 +70,36 @@
   border-radius: 5px;
   height: 40px;
   width: 100px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  color: #737373;
   margin-bottom: 40px;
+  border: 2px solid #737373;
   &:focus {
     outline: none;
+  }
+  &:hover {
+    color: white;
+    background-color: #737373;
   }
 }
 
 .button-hover-disabled {
-  background-color: #ff4d4d;
-  border: 1px solid #ff4d4d;
-  box-shadow: 1px 1px #e60000, 1.1px 1.1px #800000;
+  color: #ff4d4d;
+  background-color: white;
+  border: 2px solid #ff4d4d;
   &:hover {
-    background-color: #ff3333;
-    border: 1px solid #ff3333;
-    box-shadow: 1px 1px #cc0000, 1.1px 1.1px #660000;
+    color: white;
+    background-color: #ff4d4d;
   }
 }
 
 .button-hover-enabled {
-  background-color: #00cc44;
-  border: 1px solid #00cc44;
-  box-shadow: 1px 1px #00802b, 1.1px 1.1px #003311;
+  color: #00cc66;
+  background-color: white;
+  border: 2px solid #00cc66;
   &:hover {
-    background-color: #00b33c;
-    border: 1px solid #00b33c;
-    box-shadow: 1px 1px #006622, 1.1px 1.1px #001a09;
+    color: white;
+    background-color: #00cc66;
   }
 }

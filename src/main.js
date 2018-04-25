@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitButton = document.querySelector(".contact-form-button");
 
     submitButton.disabled = true;
-    submitButton.classList.add("button-hover-disabled");
+    // submitButton.classList.add("button-hover-disabled");
 
     function inputCheckName (element) {
       element.addEventListener("input", () => {
@@ -141,6 +141,10 @@ document.addEventListener("DOMContentLoaded", () => {
           submitButton.disabled = true;
           submitButton.classList.remove("button-hover-enabled");
           submitButton.classList.add("button-hover-disabled");
+        }
+        if (inputName.value === "" && inputMail.value === "") {
+          submitButton.classList.remove("button-hover-enabled");
+          submitButton.classList.remove("button-hover-disabled");
         }
       })
     }
@@ -155,6 +159,10 @@ document.addEventListener("DOMContentLoaded", () => {
           submitButton.disabled = true;
           submitButton.classList.remove("button-hover-enabled");
           submitButton.classList.add("button-hover-disabled");
+        }
+        if (inputName.value === "" && inputMail.value === "") {
+          submitButton.classList.remove("button-hover-enabled");
+          submitButton.classList.remove("button-hover-disabled");
         }
       })
     }

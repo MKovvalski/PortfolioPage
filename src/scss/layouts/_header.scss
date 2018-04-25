@@ -33,7 +33,7 @@
 .header-contact-list {
   @include respond-to(mobile) {
     margin-top: 5px;
-    width: 60%;
+    width: 80%;
     li:hover {
       box-shadow: none;
     }
@@ -103,10 +103,19 @@
 
 .header-gmail-logo {
   @include respond-to(mobile) {
-    animation: pulse 3s linear infinite none;
+    animation: pulse 2s linear infinite none;
   }
   @include respond-to(tablet) {
-    animation: pulse 3s linear infinite none;
+    animation: pulse 2s linear infinite none;
+  }
+}
+
+.header-cv-logo {
+  @include respond-to(mobile) {
+    animation: pulse 2s linear infinite none;
+  }
+  @include respond-to(tablet) {
+    animation: pulse 2s linear infinite none;
   }
 }
 
