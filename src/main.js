@@ -1,8 +1,11 @@
 'use strict';
 
-import SweetScroll from 'sweet-scroll'; // sweet-scroll.js from https://tsuyoshiwada.github.io/sweet-scroll/
+//imports
 
-require('./scss/main.scss');
+import SweetScroll from 'sweet-scroll'; // sweet-scroll.js from https://tsuyoshiwada.github.io/sweet-scroll/
+import Sass from "./scss/main.scss";
+
+// events
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -72,22 +75,34 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // shows/hides email address after clicking on gmail icon
+    // shows/hides text about mail copying on mouseover/mouseout
 
     const mailIcon = document.querySelector(".header-gmail-logo");
     const mailExpander = document.querySelector(".mail-expand");
 
     mailIcon.addEventListener("mouseover", () => {
-      // mailExpander.style.boxShadow = "0px 13px 21px -7px rgba(0, 0, 0, 0.3)";
       mailExpander.id = "expand";
     });
 
     mailIcon.addEventListener("mouseout", () => {
-      mailExpander.style.boxShadow = "none";
       mailExpander.id = "shrink";
     });
 
-  //  copies email by clicking on gmail icon
+    // shows/hides info about downloading resume on click
+
+    const cvIcon = document.querySelector(".header-cv-logo");
+    const cvExpander = document.querySelector(".cv-expand");
+
+    cvIcon.addEventListener("mouseover", () => {
+      cvExpander.id = "expand";
+    });
+
+    cvIcon.addEventListener("mouseout", () => {
+      cvExpander.id = "shrink";
+    });
+
+
+     //  copies email by clicking on gmail icon
 
     const mailDownLoad = document.querySelector(".header-gmail-logo");
     const mailText = document.querySelector(".mail-text");
@@ -114,6 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitButton = document.querySelector(".contact-form-button");
 
     submitButton.disabled = true;
+    submitButton.classList.add("button-hover-disabled");
 
     function inputCheckName (element) {
       element.addEventListener("input", () => {
@@ -121,16 +137,10 @@ document.addEventListener("DOMContentLoaded", () => {
           submitButton.disabled = false;
           submitButton.classList.remove("button-hover-disabled");
           submitButton.classList.add("button-hover-enabled");
-          submitButton.style.backgroundColor = "#00cc44";
-          submitButton.style.border = "1px solid #00cc44";
-          submitButton.style.boxShadow = "1px 1px #00802b, 1.1px 1.1px #003311";
         } else {
           submitButton.disabled = true;
           submitButton.classList.remove("button-hover-enabled");
           submitButton.classList.add("button-hover-disabled");
-          submitButton.style.backgroundColor = "#ff4d4d";
-          submitButton.style.border = "1px solid #ff4d4d";
-          submitButton.style.boxShadow = "1px 1px #e60000, 1.1px 1.1px #800000";
         }
       })
     }
@@ -141,16 +151,10 @@ document.addEventListener("DOMContentLoaded", () => {
           submitButton.disabled = false;
           submitButton.classList.remove("button-hover-disabled");
           submitButton.classList.add("button-hover-enabled");
-          submitButton.style.backgroundColor = "#00cc44";
-          submitButton.style.border = "1px solid #00cc44";
-          submitButton.style.boxShadow = "1px 1px #00802b, 1.1px 1.1px #003311";
         } else {
           submitButton.disabled = true;
           submitButton.classList.remove("button-hover-enabled");
           submitButton.classList.add("button-hover-disabled");
-          submitButton.style.backgroundColor = "#ff4d4d";
-          submitButton.style.border = "1px solid #ff4d4d";
-          submitButton.style.boxShadow = "1px 1px #e60000, 1.1px 1.1px #800000";
         }
       })
     }

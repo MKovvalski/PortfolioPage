@@ -91,7 +91,21 @@
   }
 }
 
+.header-cv-logo {
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  img {
+    position: relative;
+    z-index: 3;
+  }
+}
+
 .gmail-logo {
+  cursor: pointer;
+}
+
+.cv-logo {
   cursor: pointer;
 }
 
@@ -117,6 +131,26 @@
   font-weight: 500;
   color: $color-font-title;
   text-align: center;
+}
+
+.cv-expand {
+  overflow: hidden;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: white;
+  left: 0;
+  top:0;
+  z-index: 1;
+  border-radius: 60px 60px 60px 60px;
+  text-transform: lowercase;
+  line-height: 46px;
+  vertical-align: middle;
+  font-size: 19px;
+  font-weight: 500;
+  color: $color-font-title;
+  text-align: end;
 }
 
 // alert styling

@@ -43,35 +43,9 @@
   }
 }
 
-@keyframes expand-tablet {
-  0% {
-    width: 50px;
-    padding-right: 0;
-  }
-  98% {
-    padding-right: 0;
-  }
-  99% {
-    padding-right: 40px;
-  }
-  100% {
-    padding-right: 40px;
-    width: 250px;
-  }
-}
-
 @keyframes shrink {
   0% {
     width: 350px;
-  }
-  100% {
-    width: 50px;
-  }
-}
-
-@keyframes shrink-tablet {
-  0% {
-    width: 250px;
   }
   100% {
     width: 50px;
