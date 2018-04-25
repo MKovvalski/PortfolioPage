@@ -10,6 +10,11 @@
       right: 39%;
     }
   }
+  @include respond-to(tablet) {
+    &:after {
+      right: 45%;
+    }
+  }
 }
 
 .title-and-contact {
@@ -37,6 +42,9 @@
     li:hover {
       box-shadow: none;
     }
+  }
+  @include respond-to(tablet) {
+    width: 50%;
   }
 }
 

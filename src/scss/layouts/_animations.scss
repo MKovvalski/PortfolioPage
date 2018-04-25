@@ -29,16 +29,8 @@
 @keyframes expand {
   0% {
     width: 50px;
-    padding-right: 0;
-  }
-  98% {
-    padding-right: 0;
-  }
-  99% {
-    padding-right: 40px;
   }
   100% {
-    padding-right: 40px;
     width: 350px;
   }
 }

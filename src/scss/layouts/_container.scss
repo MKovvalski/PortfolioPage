@@ -8,3 +8,10 @@
     box-shadow: none;
   }
 }
+
+.content-wrapper {
+  @include respond-to(tablet) {
+    width: 100%;
+    margin: 0;
+  }
+}

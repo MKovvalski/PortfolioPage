@@ -7,6 +7,11 @@
       right: 39%
     }
   }
+  @include respond-to(tablet) {
+    &:after {
+      right: 45%;
+    }
+  }
 }
 
 .projects-wrapper {
@@ -15,6 +20,9 @@
     align-items: center;
     margin-top: 50px;
     margin-bottom: 35px;
+  }
+  @include respond-to(tablet) {
+    @include flex-box(column, space-around, center);
   }
 }
 
@@ -25,12 +33,25 @@
     margin-bottom: 30px;
     @include flex-box(column, center, center);
   }
+  @include respond-to(tablet) {
+    margin-top: 25px;
+    min-width: 320px;
+  }
 }
 
 .project-title {
   @include respond-to(mobile) {
     width: 100%;
     font-size: $font-size-section-title-mobile + 0.1rem;
+  }
+  @include respond-to(tablet) {
+    font-size: 24px;
+  }
+}
+
+.project-peek {
+  @include respond-to(tablet) {
+    height: 250px;
   }
 }
 
@@ -39,11 +60,24 @@
     width: 100%;
     text-align: center;
   }
+  @include respond-to(tablet) {
+    width: 100%;
+    text-align: center
+  }
 }
 
 .project-github-link {
   @include respond-to(mobile) {
     font-size: $font-size-text-mobile;
+    span {
+      color: $color-primary;
+    }
+  }
+  @include respond-to(tablet) {
+    font-size: 20px;
+    span {
+      color: $color-primary;
+    }
   }
 }
 
@@ -54,5 +88,11 @@
     margin-left: 0;
     margin-bottom: 10px;
     font-size: $font-size-text-mobile;
+  }
+  @include respond-to(tablet) {
+    width: 95%;
+    min-height: 150px;
+    text-align: center;
+    font-size: 20px;
   }
 }

@@ -7,6 +7,11 @@
       right: 39%;
     }
   }
+  @include respond-to(tablet) {
+  &:after {
+    right: 45%;
+  }
+  }
 }
 
 .section-title {
@@ -28,6 +33,9 @@
       height: 45px;
     }
   }
+  @include respond-to(tablet) {
+    width: 62%;
+  }
 }
 
 .main-skill-text {
@@ -36,11 +44,23 @@
     margin-top: 15px;
     margin-bottom: 0;
   }
+  @include respond-to(tablet) {
+    width: 69%;
+  }
 }
 
 .main-skill-text-paragraph {
   @include respond-to(mobile) {
     font-size: $font-size-text-mobile;
     margin-bottom: 30px;
+  }
+}
+
+.skill-github-link {
+  @include respond-to(mobile) {
+    color: $color-primary;
+  }
+  @include respond-to(tablet) {
+    color: $color-primary;
   }
 }

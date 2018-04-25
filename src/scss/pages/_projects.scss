@@ -13,15 +13,14 @@
 
 .project {
   width: 27%;
-  min-width: 230px;
+  min-width: 200px;
   background-color: $color-component-background;
   border-radius: 5px;
   box-shadow: $box-shadow-resting;
   transition: all 0.5s;
-}
-
-.project:hover {
-  box-shadow: $box-shadow-hover;
+  &:hover {
+    box-shadow: $box-shadow-hover;
+  }
 }
 
 .project-title {

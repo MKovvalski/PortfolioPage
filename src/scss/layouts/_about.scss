@@ -20,6 +20,15 @@
       right: 39%;
     }
   }
+  @include respond-to(tablet) {
+    @include flex-box(column, center, center);
+    &:before {
+      right: 45%;
+    }
+    &:after {
+      right:45%;
+    }
+  }
 }
 
 .short-description {
@@ -27,6 +36,11 @@
     width: $width-mobile;
     margin-top: 45px;
     margin-bottom: 25px;
+  }
+  @include respond-to(tablet) {
+    width: 65%;
+    margin-top: 60px;
+    margin-bottom: 0;
   }
 }
 
@@ -36,6 +50,15 @@
     font-weight: 600;
     font-size: $font-size-section-title-mobile + 0.1rem;
   }
+  @include respond-to(tablet) {
+    margin-bottom: 5px;
+  }
+}
+
+.description {
+  @include respond-to(tablet) {
+    margin-top: 0;
+  }
 }
 
 .main-traits {
@@ -43,6 +66,11 @@
     width: $width-mobile;
     margin-top: 0;
     margin-bottom: 5px;
+  }
+  @include respond-to(tablet) {
+    @include flex-box(column, space-around, center);
+    width: 65%;
+    margin-top: 20px;
   }
 }
 
@@ -53,6 +81,11 @@
     font-size: $font-size-text-mobile;
     @include flex-box(column, center, center);
   }
+  @include respond-to(tablet) {
+    width: 100%;
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
 }
 
 .trait-title {
@@ -60,5 +93,8 @@
     width: 80%;
     font-weight: 600;
     font-size: $font-size-section-title-mobile;
+  }
+  @include respond-to(tablet) {
+    margin-bottom: 5px;
   }
 }
