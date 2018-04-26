@@ -17,6 +17,26 @@ document.addEventListener("DOMContentLoaded", () => {
       updateURl: true
     });
 
+    // entry animation removal
+
+    const gmailLogo = document.querySelector(".header-gmail-logo");
+    const cvLogo = document.querySelector(".header-cv-logo");
+
+    setTimeout(() => {
+      gmailLogo.style.opacity = "1";
+      gmailLogo.classList.remove("bounce-in-1");
+      cvLogo.style.opacity = "1";
+      cvLogo.classList.remove("bounce-in-4");
+      first.classList.remove("burger-bar-elongate");
+      first.style.opacity = "1";
+      third.classList.remove("burger-bar-elongate-1");
+      third.style.opacity = "1";
+      smallFirst.classList.remove("burger-small-bar-elongate");
+      smallFirst.style.opacity = "1";
+      smallSecond.classList.remove("burger-small-bar-elongate");
+      smallSecond.style.opacity = "1";
+    },2700);
+
     // ---- close the Mobile Menu and change burger after click on one of the links
 
     const menuBurger = document.querySelector(".menu-burger");
@@ -102,21 +122,35 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-     //  copies email by clicking on gmail icon
+     //  copies email by clicking on gmail icon -- credit: css-tricks.com
 
     const mailDownLoad = document.querySelector(".header-gmail-logo");
     const mailText = document.querySelector(".mail-text");
     const copyAlert = document.querySelector(".copy-alert");
+    const copyAlertTitle = document.querySelector(".alert-title");
+    const copyAlertText = document.querySelector(".alert-text");
 
     mailDownLoad.addEventListener("click", () => {
       let range = document.createRange();
       range.selectNode(mailText);
       window.getSelection().addRange(range);
-      document.execCommand("copy");
-      // moves in the alert
-      copyAlert.id = "move-in";
+      try {
+        let successful = document.execCommand('copy');
+        let msg = successful ? 'successful' : 'unsuccessful';
+        // move-in notification if email got copied
+        copyAlertTitle.classList.add("alert-title-notification");
+        copyAlertTitle.innerText = "notification";
+        copyAlertText.innerText = "You have successfully copied the email address";
+        copyAlert.id = "move-in";
+      } catch(err) {
+        // move-in warning if email did not get copied
+        copyAlertTitle.classList.add("alert-title-warning");
+        copyAlertTitle.innerText = "warning";
+        copyAlertText.innerText = "Failed to copy email address";
+        copyAlert.id = "move-in"
+      }
       window.getSelection().removeAllRanges();
-      // moves out the alert
+      // moves out the notification/alert
       setTimeout(() => {
         copyAlert.id = "none"
       },4500);

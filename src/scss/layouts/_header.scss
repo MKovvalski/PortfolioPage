@@ -50,9 +50,11 @@
 
 .main-nav {
   @include respond-to(tablet) {
+    opacity: 1;
     width: 100%;
   }
   @include respond-to(mobile) {
+    opacity: 1;
     margin-top: 0 !important;
     position: absolute;
     width: 100%;
@@ -126,18 +128,22 @@
 // classes for burger menu lines
 
 .first {
+  opacity: 0;
   transform-origin: 0 0;
   transition: all 0.2s;
 }
 
 .third {
+  opacity: 0;
   transform-origin: 100% 100%;
 }
 
 .small-first {
+  opacity: 0;
   transform-origin: 100% 100%;
 }
 
 .small-second {
+  opacity: 0;
   transform-origin: 0 100%;
 }

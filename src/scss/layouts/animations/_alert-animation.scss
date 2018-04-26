@@ -1,0 +1,27 @@
+/*stylelint-disable*/
+
+//  -- animations for menu alert -- //
+
+// id's for alert
+
+#move-in {
+  animation: move-in 4.5s linear 1 none;
+}
+
+
+// animations for alert
+
+@keyframes move-in {
+  0% {
+    right: 2000px;
+  }
+  10% {
+    right: calc(50vw - (200px / 2));
+  }
+  80% {
+    right: calc(50vw - (200px / 2));
+  }
+  100% {
+    right: -2000px;
+  }
+}

@@ -1,0 +1,57 @@
+/*stylelint-disable*/
+
+//  -- animations for gmail logo -- //
+
+// id's for email
+
+#expand {
+  animation: expand 0.15s linear 1 forwards;
+  @include respond-to(mobile)  {
+    animation: none;
+  };
+  @include respond-to(tablet) {
+    animation: none
+  }
+}
+
+#shrink {
+  animation: shrink 0.1s linear 1 forwards;
+  @include respond-to(mobile) {
+    animation: none;
+  }
+  @include respond-to(tablet) {
+    animation: none;
+  }
+}
+
+// animations for mail
+
+@keyframes expand {
+  0% {
+    width: 50px;
+  }
+  100% {
+    width: 350px;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    width: 350px;
+  }
+  100% {
+    width: 50px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 2px 21px -15px #fff9e6;
+  }
+  50% {
+    box-shadow: 0px 2px 21px 6px #fff9e6;
+  }
+  100% {
+    box-shadow: 0px 2px 21px -15px #fff9e6;
+  }
+}

@@ -1,0 +1,165 @@
+/*stylelint-disable*/
+
+//  -- animations for menu burger -- //
+
+// id's for menu burger
+
+.burger-bar-elongate {
+  @include respond-to(mobile) {
+    animation: burger-bar-elongate 0.3s 1.6s linear 1 forwards;
+  }
+}
+
+.burger-bar-elongate-1 {
+  @include respond-to(mobile) {
+    animation: burger-bar-elongate 0.3s 2s linear 1 forwards;
+  }
+}
+
+.burger-small-bar-elongate {
+  @include respond-to(mobile) {
+    animation: burger-small-bar-elongate 0.3s 1.8s linear 1 forwards;
+  }
+}
+
+#rotate-left {
+  @include respond-to(mobile) {
+    animation: rotate-left 0.2s linear 1 forwards;
+  }
+}
+
+#rotate-counter-left {
+  @include respond-to(mobile) {
+    animation: rotate-counter-left 0.2s linear 1 forwards;
+  }
+}
+
+#rotate-right {
+  @include respond-to(mobile) {
+    animation: rotate-right 0.2s linear 1 forwards;
+  }
+}
+
+#rotate-counter-right {
+  @include respond-to(mobile) {
+    animation: rotate-counter-right 0.2s linear 1 forwards;
+  }
+}
+
+#rotate-downward-right {
+  @include respond-to(mobile) {
+    animation: rotate-downward-right 0.2s linear 1 forwards;
+  }
+}
+
+#rotate-counter-downward-right {
+  @include respond-to(mobile) {
+    animation: rotate-counter-downward-right 0.2s linear 1 forwards;
+  }
+}
+
+#rotate-downward-left {
+  @include respond-to(mobile) {
+    animation: rotate-downward-left 0.2s linear 1 forwards;
+  }
+}
+
+#rotate-counter-downward-left {
+  @include respond-to(mobile) {
+    animation: rotate-counter-downward-left 0.2s linear 1 forwards;
+  }
+}
+
+// animations for menu burger
+
+@keyframes burger-bar-elongate {
+  0% {
+    opacity: 1;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 46px;
+  }
+}
+
+@keyframes burger-small-bar-elongate {
+  0% {
+    opacity: 1;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 23px;
+  }
+}
+
+@keyframes rotate-left {
+  100% {
+    width: 40px;
+    transform: translate(7px, -3px) rotate(90deg);
+
+  }
+}
+
+@keyframes rotate-counter-left {
+  0% {
+    width: 40px;
+    transform: translate(7px, -3px) rotate(90deg);
+
+  }
+  100% {
+    width: 45px;
+    transform: translate(0 , 0) rotate(0deg);
+  }
+}
+
+@keyframes rotate-right {
+  100% {
+    width: 40px;
+    transform: translate(-6px, -1px) rotate(90deg);
+  }
+}
+
+@keyframes rotate-counter-right {
+  0% {
+    width: 40px;
+    transform: translate(-6px, -1px) rotate(90deg);
+  }
+  100% {
+    width: 45px;
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes rotate-downward-right {
+  100% {
+    width: 27px;
+    transform: translate(2.5px, 0) rotate(45deg);
+  }
+}
+
+@keyframes rotate-counter-downward-right {
+  0% {
+    transform: translate(0px, 0px) rotate(45deg);
+  }
+  100% {
+    transform: translate(0, 0)rotate(0deg);
+  }
+}
+
+@keyframes rotate-downward-left {
+  100% {
+    width: 27px;
+    transform: translate(-1.5px, 0) rotate(-45deg);
+  }
+}
+
+@keyframes rotate-counter-downward-left {
+  0% {
+    transform: translate(0px, 0px) rotate(-45deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
