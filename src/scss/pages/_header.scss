@@ -43,11 +43,13 @@
 .name-and-surname {
   @include header-titles($font-size-title, 900, $spacing-title, $color-font-title);
   text-shadow: 0.5px 0.5px #262626;
+  animation: slide-in-left 0.5s linear 1 forwards;
 }
 
 .position {
   @include header-titles($font-size-secondary-title, 600, $spacing-secondary-title, $color-font-subtitle);
   text-shadow: 0.5px 0.5px grey;
+  animation: slide-in-right 0.5s linear 1 forwards;;
 }
 
 .main-nav {
