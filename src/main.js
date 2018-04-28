@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const cvLogo = document.querySelector(".header-cv-logo");
 
     setTimeout(() => {
-      console.log("penis");
       gmailLogo.style.opacity = "1";
       gmailLogo.classList.remove("bounce-in-1");
       cvLogo.style.opacity = "1";
