@@ -117,14 +117,14 @@
 @keyframes rotate-right {
   100% {
     width: 40px;
-    transform: translate(-6px, -1px) rotate(90deg);
+    transform: translate(-6px, -2px) rotate(90deg);
   }
 }
 
 @keyframes rotate-counter-right {
   0% {
     width: 40px;
-    transform: translate(-6px, -1px) rotate(90deg);
+    transform: translate(-6px, -2px) rotate(90deg);
   }
   100% {
     width: 45px;

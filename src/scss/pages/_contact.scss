@@ -37,28 +37,52 @@
 .contact-form-field {
   width: 80%;
   margin-bottom: 40px;
-  input {
-    color: $color-font-text-links;
-    height: 30px;
-    width: 100%;
-    border: none;
-    border-bottom: 4px solid $color-secondary;
-    &:focus {
-      outline: none;
-    }
+}
+
+.form-input-name {
+  color: $color-font-text-links;
+  height: 30px;
+  width: 100%;
+  border: none;
+  border-bottom: 4px solid $color-secondary;
+  transition: all 0.7s;
+  &:focus {
+    outline: none;
   }
-  textarea {
-    height: 100px;
-    width: 100%;
-    border: none;
-    -webkit-appearance: none;
-    border-bottom: 4px solid $color-secondary;
-    resize: none;
-    color: $color-font-text-links;
-    &:focus {
-      outline: none;
-    }
+}
+
+.form-input-email {
+  color: $color-font-text-links;
+  height: 30px;
+  width: 100%;
+  border: none;
+  border-bottom: 4px solid $color-secondary;
+  transition: all 0.7s;
+  &:focus {
+    outline: none;
   }
+}
+
+.form-input-text {
+  height: 100px;
+  width: 100%;
+  border: none;
+  -webkit-appearance: none;
+  border-bottom: 4px solid $color-secondary;
+  resize: none;
+  color: $color-font-text-links;
+  &:focus {
+    outline: none;
+  }
+}
+
+.form-input-name-focus-empty {
+  border-bottom: 4px solid #ff4d4d;
+}
+
+
+.form-input-name-focus-filled {
+  border-bottom: 4px solid #00cc66;
 }
 
 .field-label {
@@ -66,7 +90,7 @@
 }
 
 .contact-form-button {
-  transition: all 0.4s;
+  transition: all 0.3s;
   border-radius: 5px;
   height: 40px;
   width: 100px;

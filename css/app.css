@@ -944,31 +944,52 @@ body {
 .contact-form-field {
   width: 80%;
   margin-bottom: 40px; }
-  .contact-form-field input {
-    color: #333333;
-    height: 30px;
-    width: 100%;
-    border: none;
-    border-bottom: 4px solid #FFD447; }
-    .contact-form-field input:focus {
-      outline: none; }
-  .contact-form-field textarea {
-    height: 100px;
-    width: 100%;
-    border: none;
-    -webkit-appearance: none;
-    border-bottom: 4px solid #FFD447;
-    resize: none;
-    color: #333333; }
-    .contact-form-field textarea:focus {
-      outline: none; }
+
+.form-input-name {
+  color: #333333;
+  height: 30px;
+  width: 100%;
+  border: none;
+  border-bottom: 4px solid #FFD447;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s; }
+  .form-input-name:focus {
+    outline: none; }
+
+.form-input-email {
+  color: #333333;
+  height: 30px;
+  width: 100%;
+  border: none;
+  border-bottom: 4px solid #FFD447;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s; }
+  .form-input-email:focus {
+    outline: none; }
+
+.form-input-text {
+  height: 100px;
+  width: 100%;
+  border: none;
+  -webkit-appearance: none;
+  border-bottom: 4px solid #FFD447;
+  resize: none;
+  color: #333333; }
+  .form-input-text:focus {
+    outline: none; }
+
+.form-input-name-focus-empty {
+  border-bottom: 4px solid #ff4d4d; }
+
+.form-input-name-focus-filled {
+  border-bottom: 4px solid #00cc66; }
 
 .field-label {
   color: #595959; }
 
 .contact-form-button {
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   border-radius: 5px;
   height: 40px;
   width: 100px;
@@ -1049,26 +1070,22 @@ body {
 .contact-logo {
   width: 35px;
   height: 35px;
-  border-radius: 50%; }
-
-.mail-expander {
-  display: none;
-  border-radius: 25px;
-  background-color: white; }
-
-.mail-logo-doubler {
-  position: relative;
-  width: 45px;
-  height: 45px; }
-
-.mail {
-  position: absolute;
-  top: 8.5px;
-  left: 47px;
-  display: none;
-  font-size: 18px;
-  font-weight: 500;
-  color: #333333; }
+  border-radius: 50%;
+  position: relative; }
+  .contact-logo:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #595959;
+    opacity: 0.7;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+  .contact-logo:hover:after {
+    opacity: 0; }
 
 /*stylelint-disable*/
 @media only screen and (min-width: 300px) and (max-width: 480px) {
@@ -1110,7 +1127,8 @@ body {
 
 @media only screen and (min-width: 300px) and (max-width: 480px) {
   .position {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem;
+    width: 80%; } }
 
 @media only screen and (min-width: 300px) and (max-width: 480px) {
   .header-contact-list {
@@ -1823,20 +1841,20 @@ body {
 @-webkit-keyframes rotate-right {
   100% {
     width: 40px;
-    -webkit-transform: translate(-6px, -1px) rotate(90deg);
-            transform: translate(-6px, -1px) rotate(90deg); } }
+    -webkit-transform: translate(-6px, -2px) rotate(90deg);
+            transform: translate(-6px, -2px) rotate(90deg); } }
 
 @keyframes rotate-right {
   100% {
     width: 40px;
-    -webkit-transform: translate(-6px, -1px) rotate(90deg);
-            transform: translate(-6px, -1px) rotate(90deg); } }
+    -webkit-transform: translate(-6px, -2px) rotate(90deg);
+            transform: translate(-6px, -2px) rotate(90deg); } }
 
 @-webkit-keyframes rotate-counter-right {
   0% {
     width: 40px;
-    -webkit-transform: translate(-6px, -1px) rotate(90deg);
-            transform: translate(-6px, -1px) rotate(90deg); }
+    -webkit-transform: translate(-6px, -2px) rotate(90deg);
+            transform: translate(-6px, -2px) rotate(90deg); }
   100% {
     width: 45px;
     -webkit-transform: translate(0, 0) rotate(0deg);
@@ -1845,8 +1863,8 @@ body {
 @keyframes rotate-counter-right {
   0% {
     width: 40px;
-    -webkit-transform: translate(-6px, -1px) rotate(90deg);
-            transform: translate(-6px, -1px) rotate(90deg); }
+    -webkit-transform: translate(-6px, -2px) rotate(90deg);
+            transform: translate(-6px, -2px) rotate(90deg); }
   100% {
     width: 45px;
     -webkit-transform: translate(0, 0) rotate(0deg);

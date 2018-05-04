@@ -98,19 +98,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const cvLogo = document.querySelector(".header-cv-logo");
 
   setTimeout(() => {
-    console.log("classes removed");
     gmailLogo.style.opacity = "1";
     gmailLogo.classList.remove("bounce-in-1");
     cvLogo.style.opacity = "1";
     cvLogo.classList.remove("bounce-in-4");
-    first.classList.remove("burger-bar-elongate");
     first.style.opacity = "1";
-    third.classList.remove("burger-bar-elongate-1");
+    first.classList.remove("burger-bar-elongate");
     third.style.opacity = "1";
-    smallFirst.classList.remove("burger-small-bar-elongate");
+    third.classList.remove("burger-bar-elongate-1");
     smallFirst.style.opacity = "1";
-    smallSecond.classList.remove("burger-small-bar-elongate");
+    smallFirst.classList.remove("burger-small-bar-elongate");
     smallSecond.style.opacity = "1";
+    smallSecond.classList.remove("burger-small-bar-elongate");
   }, 2700);
 
   // ---- close the Mobile Menu and change burger after click on one of the links
@@ -231,16 +230,59 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 4500);
   });
 
-  // changes enables/disables button on verification and changes button styles
+  // enables/disables button on verification and changes button styles
 
   const inputName = document.querySelector(".form-input-name");
   const inputMail = document.querySelector(".form-input-email");
   const submitButton = document.querySelector(".contact-form-button");
 
+  // default button setting
   submitButton.disabled = true;
 
+  // switches classes for button on focus
+  inputName.addEventListener("focus", () => {
+    if (inputName.value === "") {
+      submitButton.classList.add("button-hover-disabled");
+      inputName.classList.add("form-input-name-focus-empty");
+    }
+  });
+
+  inputMail.addEventListener("focus", () => {
+    if (inputMail.value === "") {
+      submitButton.classList.add("button-hover-disabled");
+      inputMail.classList.add("form-input-name-focus-empty");
+    }
+  });
+
+  // switches classes for button on focusout
+  inputName.addEventListener("focusout", () => {
+    if (inputName.value !== "") {
+      inputName.classList.remove("form-input-name-focus-empty");
+    } else {
+      inputName.classList.remove("form-input-name-focus-empty");
+      submitButton.classList.remove("button-hover-disabled");
+    }
+  });
+
+  inputMail.addEventListener("focusout", () => {
+    if (inputMail.value !== "") {
+      inputName.classList.remove("form-input-name-focus-empty");
+    } else {
+      inputMail.classList.remove("form-input-name-focus-empty");
+      submitButton.classList.remove("button-hover-disabled");
+    }
+  });
+
+  // input name validation
   function inputCheckName(element) {
     element.addEventListener("input", () => {
+      if (element.value !== "") {
+        element.classList.remove("form-input-name-focus-empty");
+        element.classList.add("form-input-name-focus-filled");
+      } else {
+        element.classList.remove("form-input-name-focus-filled");
+        element.classList.add("form-input-name-focus-empty");
+      }
       if (element.value !== "" && inputMail.value.indexOf('@') > -1) {
         //add green color and enable button
         submitButton.disabled = false;
@@ -260,8 +302,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // input mail validation
   function inputCheckMail(element) {
     element.addEventListener("input", () => {
+      if (element.value !== "") {
+        element.classList.remove("form-input-name-focus-empty");
+        element.classList.add("form-input-name-focus-filled");
+      } else {
+        element.classList.remove("form-input-name-focus-filled");
+        element.classList.add("form-input-name-focus-empty");
+      }
       if (inputName.value !== "" && element.value.indexOf('@') > -1) {
         //add green color and enable button
         submitButton.disabled = false;

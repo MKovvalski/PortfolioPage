@@ -22,26 +22,22 @@
   width: 35px;
   height: 35px;
   border-radius: 50%;
-}
-
-.mail-expander {
-  display: none;
-  border-radius: 25px;
-  background-color: white;
-}
-
-.mail-logo-doubler {
   position: relative;
-  width: 45px;
-  height: 45px;
-}
-
-.mail {
-  position: absolute;
-  top: 8.5px;
-  left: 47px;
-  display: none;
-  font-size: 18px;
-  font-weight: 500;
-  color: $color-font-text-links;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: $color-tertiary;
+    opacity: 0.7;
+    transition: all 0.3s;
+  }
+  &:hover {
+    &:after {
+      opacity: 0;
+    }
+  }
 }
