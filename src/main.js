@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     inputMail.addEventListener("focusout", () => {
       if (inputMail.value !== "") {
-        inputName.classList.remove("form-input-name-focus-empty");
+        inputMail.classList.remove("form-input-name-focus-empty");
       } else {
         inputMail.classList.remove("form-input-name-focus-empty");
         submitButton.classList.remove("button-hover-disabled");
@@ -231,7 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // input mail validation
     function inputCheckMail (element) {
       element.addEventListener("input", () => {
-        if (element.value !== "") {
+        if (element.value.indexOf('@') > -1) {
           element.classList.remove("form-input-name-focus-empty");
           element.classList.add("form-input-name-focus-filled");
         } else {
