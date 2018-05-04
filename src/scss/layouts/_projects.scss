@@ -50,6 +50,7 @@
 }
 
 .project-peek {
+
   @include respond-to(tablet) {
     height: 250px;
   }

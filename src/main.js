@@ -163,20 +163,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitButton = document.querySelector(".contact-form-button");
 
     submitButton.disabled = true;
-    // submitButton.classList.add("button-hover-disabled");
 
     function inputCheckName (element) {
       element.addEventListener("input", () => {
         if (element.value !== "" && inputMail.value.indexOf('@') > -1) {
+          //add green color and enable button
           submitButton.disabled = false;
           submitButton.classList.remove("button-hover-disabled");
           submitButton.classList.add("button-hover-enabled");
         } else {
+          //remove green, add red and disable button
           submitButton.disabled = true;
           submitButton.classList.remove("button-hover-enabled");
           submitButton.classList.add("button-hover-disabled");
         }
         if (inputName.value === "" && inputMail.value === "") {
+          //return button to default state
           submitButton.classList.remove("button-hover-enabled");
           submitButton.classList.remove("button-hover-disabled");
         }
@@ -186,15 +188,18 @@ document.addEventListener("DOMContentLoaded", () => {
     function inputCheckMail (element) {
       element.addEventListener("input", () => {
         if (inputName.value !== "" && element.value.indexOf('@') > -1) {
+          //add green color and enable button
           submitButton.disabled = false;
           submitButton.classList.remove("button-hover-disabled");
           submitButton.classList.add("button-hover-enabled");
         } else {
+          //remove green, add red and disable button
           submitButton.disabled = true;
           submitButton.classList.remove("button-hover-enabled");
           submitButton.classList.add("button-hover-disabled");
         }
         if (inputName.value === "" && inputMail.value === "") {
+          //return button to default state
           submitButton.classList.remove("button-hover-enabled");
           submitButton.classList.remove("button-hover-disabled");
         }

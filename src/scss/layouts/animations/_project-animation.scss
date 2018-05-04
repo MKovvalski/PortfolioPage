@@ -1,0 +1,20 @@
+/*stylelint-disable*/
+
+// animation for project hover
+
+//classes
+
+.project-peek-hover-enable {
+  @include respond-to(desktop) {
+    display: block;
+    animation: show-hover 0.2s linear 1 forwards;
+  }
+}
+
+//animation
+
+@keyframes show-hover {
+  100% {
+    opacity: 0.9;
+  }
+}
