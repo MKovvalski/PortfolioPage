@@ -44,7 +44,6 @@
 .project-live-link {
   @include respond-to(desktop) {
     position: relative;
-    z-index: 2;
     &:after {
       position: absolute;
       color: #1a1a1a;

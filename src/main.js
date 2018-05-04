@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cvLogo = document.querySelector(".header-cv-logo");
 
     setTimeout(() => {
+      console.log("classes removed");
       gmailLogo.style.opacity = "1";
       gmailLogo.classList.remove("bounce-in-1");
       cvLogo.style.opacity = "1";
