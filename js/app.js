@@ -260,7 +260,9 @@ document.addEventListener("DOMContentLoaded", () => {
       inputName.classList.remove("form-input-name-focus-empty");
     } else {
       inputName.classList.remove("form-input-name-focus-empty");
-      submitButton.classList.remove("button-hover-disabled");
+      if (inputMail.value === "") {
+        submitButton.classList.remove("button-hover-disabled");
+      }
     }
   });
 
@@ -269,7 +271,9 @@ document.addEventListener("DOMContentLoaded", () => {
       inputMail.classList.remove("form-input-name-focus-empty");
     } else {
       inputMail.classList.remove("form-input-name-focus-empty");
-      submitButton.classList.remove("button-hover-disabled");
+      if (inputName.value === "") {
+        submitButton.classList.remove("button-hover-disabled");
+      }
     }
   });
 
@@ -297,7 +301,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (inputName.value === "" && inputMail.value === "") {
         //return button to default state
         submitButton.classList.remove("button-hover-enabled");
-        submitButton.classList.remove("button-hover-disabled");
       }
     });
   }
@@ -326,7 +329,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (inputName.value === "" && inputMail.value === "") {
         //return button to default state
         submitButton.classList.remove("button-hover-enabled");
-        submitButton.classList.remove("button-hover-disabled");
       }
     });
   }

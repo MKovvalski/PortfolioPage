@@ -34,7 +34,7 @@
   object-fit: cover;
   background-color: white;
   border-radius: 50%;
-  transition: all 0.3s;
+  transition: box-shadow 0.3s;
   &:hover {
     box-shadow: $box-shadow-resting;
   }
@@ -71,7 +71,7 @@
   text-transform: uppercase;
   text-shadow: 0.5px 0.5px grey;
   @include header-titles(1.3rem, 600, $spacing-nav-elements, $color-font-subtitle);
-  transition: all 0.3s;
+  transition: color 0.3s;
   &:hover {
     color: $color-tertiary;
   }

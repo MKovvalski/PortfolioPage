@@ -339,8 +339,10 @@ body {
      object-fit: cover;
   background-color: white;
   border-radius: 50%;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s; }
   .contact-link:hover {
     -webkit-box-shadow: 0px 13px 21px -7px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 13px 21px -7px rgba(0, 0, 0, 0.3); }
@@ -406,8 +408,8 @@ body {
   font-weight: 600;
   letter-spacing: 1px;
   color: white;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s; }
   .nav-title:hover {
     color: #595959; }
 
@@ -781,8 +783,7 @@ body {
   -webkit-box-shadow: 0px 13px 21px -7px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 13px 21px -7px rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  z-index: 2; }
+  transition: all 0.5s; }
   .project:hover {
     -webkit-box-shadow: 0px 13px 21px 5px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 13px 21px 5px rgba(0, 0, 0, 0.3); }
@@ -808,8 +809,9 @@ body {
 
 @media only screen and (min-width: 1024px) {
   .project-live-link {
-    position: relative; }
-    .project-live-link:after {
+    position: relative;
+    z-index: 1; }
+    .project-live-link:before {
       position: absolute;
       color: #1a1a1a;
       text-align: center;
@@ -822,14 +824,14 @@ body {
       width: 100%;
       height: 215px;
       background-color: white;
-      z-index: 1;
+      z-index: 2000;
       opacity: 0;
       -webkit-transition: all 0.2s;
       transition: all 0.2s; }
     .project-live-link:hover {
       -webkit-transition: all 0.2s;
       transition: all 0.2s; }
-      .project-live-link:hover:after {
+      .project-live-link:hover:before {
         opacity: 0.7; } }
 
 .project-link-wrapper {
