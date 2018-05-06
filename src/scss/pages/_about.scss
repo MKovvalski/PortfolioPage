@@ -40,16 +40,17 @@
 }
 
 .trait-title {
-  width: 260px;
+  width: 285px;
   text-align: center;
   text-transform: uppercase;
   border-bottom: 3.5px solid $color-primary;
-  @include header-titles($font-size-sub-text, 800, $spacing-secondary-title, $color-font-text-links);
+  @include header-titles(1.4rem, 800, $spacing-secondary-title, $color-font-text-links);
 }
 
 .trait-description {
   min-height: 115px;
   color: $color-font-text;
   text-align: center;
+  font-size: $font-size-sub-text;
 }
 

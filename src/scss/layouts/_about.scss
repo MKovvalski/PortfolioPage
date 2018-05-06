@@ -78,11 +78,17 @@
 
 .trait-title {
   @include respond-to(mobile) {
-    width: 80%;
+    width: 90%;
     font-weight: 600;
-    font-size: $font-size-section-title-mobile;
+    font-size: $font-size-section-title-mobile + 0.1rem;
   }
   @include respond-to(tablet) {
     margin-bottom: 5px;
+  }
+}
+
+.trait-description {
+  @include respond-to(mobile) {
+    font-size: $font-size-text-mobile;
   }
 }

@@ -642,11 +642,11 @@ body {
           align-items: center; }
 
 .trait-title {
-  width: 260px;
+  width: 285px;
   text-align: center;
   text-transform: uppercase;
   border-bottom: 3.5px solid #39CE98;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 800;
   letter-spacing: 1px;
   color: #333333; }
@@ -654,7 +654,8 @@ body {
 .trait-description {
   min-height: 115px;
   color: #595959;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.1rem; }
 
 /*stylelint-disable*/
 .main-skills {
@@ -1365,13 +1366,17 @@ body {
 
 @media only screen and (min-width: 300px) and (max-width: 480px) {
   .trait-title {
-    width: 80%;
+    width: 90%;
     font-weight: 600;
-    font-size: 1.4rem; } }
+    font-size: 1.5rem; } }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
   .trait-title {
     margin-bottom: 5px; } }
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  .trait-description {
+    font-size: 1.3rem; } }
 
 /*stylelint-disable*/
 @media only screen and (min-width: 300px) and (max-width: 480px) {
@@ -1386,7 +1391,6 @@ body {
 
 @media only screen and (min-width: 300px) and (max-width: 480px) {
   .section-title {
-    width: 180px;
     margin-top: 35px;
     font-weight: 600;
     font-size: 2.1rem;
