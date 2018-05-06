@@ -170,33 +170,44 @@ document.addEventListener("DOMContentLoaded", () => {
       if (inputName.value === "") {
         submitButton.classList.add("button-hover-disabled");
         inputName.classList.add("form-input-name-focus-empty");
+      } else {
+        inputName.classList.add("form-input-name-focus-filled");
       }
     });
 
     inputMail.addEventListener("focus", () => {
-      if (inputMail.value === "") {
+      if (!inputMail.value.indexOf('@') > -1) {
         submitButton.classList.add("button-hover-disabled");
         inputMail.classList.add("form-input-name-focus-empty");
+      } else {
+        inputMail.classList.add("form-input-name-focus-filled");
       }
     });
 
-    // switches classes for button on focusout
+    // switches classes for button on focusouta
     inputName.addEventListener("focusout", () => {
       if (inputName.value !== "") {
         inputName.classList.remove("form-input-name-focus-empty");
+        inputName.classList.add("form-input-name-focus-filled");
       } else {
         inputName.classList.remove("form-input-name-focus-empty");
-        if (inputMail.value === "") {
-          submitButton.classList.remove("button-hover-disabled");
+        inputName.classList.remove("form-input-name-focus-filled");
+        if (inputMail.value.indexOf('@') > -1) {
+          submitButton.classList.add("button-hover-disabled");
         }
       }
     });
 
     inputMail.addEventListener("focusout", () => {
-      if (inputMail.value !== "") {
+      if (inputMail.value.indexOf('@') > -1) {
         inputMail.classList.remove("form-input-name-focus-empty");
+        inputMail.classList.add("form-input-name-focus-filled");
       } else {
-        inputMail.classList.remove("form-input-name-focus-empty");
+        if (inputMail.value === "") {
+          inputMail.classList.remove("form-input-name-focus-empty");
+        } else {
+          inputMail.classList.add("form-input-name-focus-empty");
+        }
         if (inputName.value === "") {
           submitButton.classList.remove("button-hover-disabled");
         }
