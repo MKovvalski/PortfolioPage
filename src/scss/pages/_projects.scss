@@ -6,8 +6,8 @@
 }
 
 .projects-wrapper {
-  margin-top: 70px;
-  margin-bottom: 60px;
+  margin-top: 50px;
+  //margin-bottom: 60px;
   @include flex-box(row, space-around, flex-start);
 }
 
@@ -21,6 +21,10 @@
   &:hover {
     box-shadow: $box-shadow-hover;
   }
+}
+
+.margin-addOn {
+  margin-bottom: 50px;
 }
 
 .project-title {
@@ -69,7 +73,6 @@
     }
   }
 }
-
 
 .project-link-wrapper {
   margin-top: 10px;
