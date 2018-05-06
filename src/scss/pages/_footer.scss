@@ -22,22 +22,24 @@
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  position: relative;
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: $color-tertiary;
-    opacity: 0.7;
-    transition: all 0.3s;
-  }
-  &:hover {
+  @include respond-to(desktop) {
+    position: relative;
     &:after {
-      opacity: 0;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: $color-tertiary;
+      opacity: 0.7;
+      transition: all 0.3s;
+    }
+    &:hover {
+      &:after {
+        opacity: 0;
+      }
     }
   }
 }

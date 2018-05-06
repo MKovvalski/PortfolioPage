@@ -1072,22 +1072,24 @@ body {
 .contact-logo {
   width: 35px;
   height: 35px;
-  border-radius: 50%;
-  position: relative; }
-  .contact-logo:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: #595959;
-    opacity: 0.7;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s; }
-  .contact-logo:hover:after {
-    opacity: 0; }
+  border-radius: 50%; }
+  @media only screen and (min-width: 1024px) {
+    .contact-logo {
+      position: relative; }
+      .contact-logo:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #595959;
+        opacity: 0.7;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s; }
+      .contact-logo:hover:after {
+        opacity: 0; } }
 
 /*stylelint-disable*/
 @media only screen and (min-width: 300px) and (max-width: 480px) {
