@@ -130,6 +130,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const copyAlertTitle = document.querySelector(".alert-title");
     const copyAlertText = document.querySelector(".alert-text");
 
+    // classes names
+    const buttonDisabled = "button-hover-disabled";
+    const buttonEnabled = "button-hover-enabled";
+    const inputIncorrect = "form-input-name-focus-incorrect";
+    const inputCorrect = "form-input-name-focus-correct";
+
     mailDownLoad.addEventListener("click", () => {
       let range = document.createRange();
       range.selectNode(mailText);
@@ -168,48 +174,49 @@ document.addEventListener("DOMContentLoaded", () => {
     // switches classes for button on focus
     inputName.addEventListener("focus", () => {
       if (inputName.value === "") {
-        submitButton.classList.add("button-hover-disabled");
-        inputName.classList.add("form-input-name-focus-empty");
+        submitButton.classList.add(buttonDisabled);
+        inputName.classList.add(inputIncorrect);
       } else {
-        inputName.classList.add("form-input-name-focus-filled");
+        inputName.classList.add(inputCorrect);
       }
     });
 
     inputMail.addEventListener("focus", () => {
       if (!inputMail.value.indexOf('@') > -1) {
-        submitButton.classList.add("button-hover-disabled");
-        inputMail.classList.add("form-input-name-focus-empty");
+        submitButton.classList.add(buttonDisabled);
+        inputMail.classList.add(inputIncorrect);
       } else {
-        inputMail.classList.add("form-input-name-focus-filled");
+        inputMail.classList.add(inputCorrect);
       }
     });
 
-    // switches classes for button on focusouta
+    // switches classes for button on focusout
     inputName.addEventListener("focusout", () => {
       if (inputName.value !== "") {
-        inputName.classList.remove("form-input-name-focus-empty");
-        inputName.classList.add("form-input-name-focus-filled");
+        inputName.classList.remove(inputIncorrect);
+        inputName.classList.add(inputCorrect);
       } else {
-        inputName.classList.remove("form-input-name-focus-empty");
-        inputName.classList.remove("form-input-name-focus-filled");
+        inputName.classList.remove(inputIncorrect);
+        inputName.classList.remove(inputCorrect);
+        submitButton.classList.remove(buttonDisabled);
         if (inputMail.value.indexOf('@') > -1) {
-          submitButton.classList.add("button-hover-disabled");
+          submitButton.classList.add(buttonDisabled);
         }
       }
     });
 
     inputMail.addEventListener("focusout", () => {
       if (inputMail.value.indexOf('@') > -1) {
-        inputMail.classList.remove("form-input-name-focus-empty");
-        inputMail.classList.add("form-input-name-focus-filled");
+        inputMail.classList.remove(inputIncorrect);
+        inputMail.classList.add(inputCorrect);
       } else {
         if (inputMail.value === "") {
-          inputMail.classList.remove("form-input-name-focus-empty");
+          inputMail.classList.remove(inputIncorrect);
+          if (inputName.value === "") {
+            submitButton.classList.remove(buttonDisabled);
+          }
         } else {
-          inputMail.classList.add("form-input-name-focus-empty");
-        }
-        if (inputName.value === "") {
-          submitButton.classList.remove("button-hover-disabled");
+          inputMail.classList.add(inputIncorrect);
         }
       }
     });
@@ -218,26 +225,26 @@ document.addEventListener("DOMContentLoaded", () => {
     function inputCheckName (element) {
       element.addEventListener("input", () => {
         if (element.value !== "") {
-          element.classList.remove("form-input-name-focus-empty");
-          element.classList.add("form-input-name-focus-filled");
+          element.classList.remove(inputIncorrect);
+          element.classList.add(inputCorrect);
         } else {
-          element.classList.remove("form-input-name-focus-filled");
-          element.classList.add("form-input-name-focus-empty");
+          element.classList.remove(inputCorrect);
+          element.classList.add(inputIncorrect);
         }
         if (element.value !== "" && inputMail.value.indexOf('@') > -1) {
           //add green color and enable button
           submitButton.disabled = false;
-          submitButton.classList.remove("button-hover-disabled");
-          submitButton.classList.add("button-hover-enabled");
+          submitButton.classList.remove(buttonDisabled);
+          submitButton.classList.add(buttonEnabled);
         } else {
           //remove green, add red and disable button
           submitButton.disabled = true;
-          submitButton.classList.remove("button-hover-enabled");
-          submitButton.classList.add("button-hover-disabled");
+          submitButton.classList.remove(buttonEnabled);
+          submitButton.classList.add(buttonDisabled);
         }
         if (inputName.value === "" && inputMail.value === "") {
           //return button to default state
-          submitButton.classList.remove("button-hover-enabled");
+          submitButton.classList.remove(buttonEnabled);
         }
       })
     }
@@ -246,26 +253,26 @@ document.addEventListener("DOMContentLoaded", () => {
     function inputCheckMail (element) {
       element.addEventListener("input", () => {
         if (element.value.indexOf('@') > -1) {
-          element.classList.remove("form-input-name-focus-empty");
-          element.classList.add("form-input-name-focus-filled");
+          element.classList.remove(inputIncorrect);
+          element.classList.add(inputCorrect);
         } else {
-          element.classList.remove("form-input-name-focus-filled");
-          element.classList.add("form-input-name-focus-empty");
+          element.classList.remove(inputCorrect);
+          element.classList.add(inputIncorrect);
         }
         if (inputName.value !== "" && element.value.indexOf('@') > -1) {
           //add green color and enable button
           submitButton.disabled = false;
-          submitButton.classList.remove("button-hover-disabled");
-          submitButton.classList.add("button-hover-enabled");
+          submitButton.classList.remove(buttonDisabled);
+          submitButton.classList.add(buttonEnabled);
         } else {
           //remove green, add red and disable button
           submitButton.disabled = true;
-          submitButton.classList.remove("button-hover-enabled");
-          submitButton.classList.add("button-hover-disabled");
+          submitButton.classList.remove(buttonEnabled);
+          submitButton.classList.add(buttonDisabled);
         }
         if (inputName.value === "" && inputMail.value === "") {
           //return button to default state
-          submitButton.classList.remove("button-hover-enabled");
+          submitButton.classList.remove(buttonEnabled);
         }
       })
     }
