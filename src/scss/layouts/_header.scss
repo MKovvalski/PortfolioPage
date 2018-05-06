@@ -25,13 +25,13 @@
 
 .name-and-surname {
   @include respond-to(mobile) {
-    font-size: $font-size-title-mobile;
+    font-size: $font-size-title-mobile + 0.3rem;
   }
 }
 
 .position {
   @include respond-to(mobile) {
-    font-size: $font-size-subtitle-mobile;
+    font-size: $font-size-subtitle-mobile + 0.2rem;
     width: 80%;
   }
 }
