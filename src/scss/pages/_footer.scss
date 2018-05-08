@@ -22,12 +22,15 @@
   width: 35px;
   height: 35px;
   border-radius: 50%;
+}
+
+.media-link {
   @include respond-to(desktop) {
     position: relative;
     &:after {
       content: "";
       position: absolute;
-      top: 0;
+      top: -18px;
       left: 0;
       width: 35px;
       height: 35px;
