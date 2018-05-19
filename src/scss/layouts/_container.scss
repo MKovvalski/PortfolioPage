@@ -1,5 +1,11 @@
 /*stylelint-disable*/
 
+.container {
+  @include respond-to(mobile) {
+    background-image: url("");
+  }
+}
+
 .content-wrapper {
   @include respond-to(mobile) {
     width: 100%;

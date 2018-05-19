@@ -1097,6 +1097,10 @@ body {
 
 /*stylelint-disable*/
 @media only screen and (min-width: 300px) and (max-width: 480px) {
+  .container {
+    background-image: url(""); } }
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
   .content-wrapper {
     width: 100%;
     margin-top: 0;
