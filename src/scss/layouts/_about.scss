@@ -34,6 +34,7 @@
 .short-description {
   @include respond-to(mobile) {
     width: $width-mobile;
+    margin-top: 15px;
     margin-bottom: 25px;
   }
   @include respond-to(tablet) {
@@ -54,6 +55,7 @@
     width: $width-mobile;
     margin-top: 0;
     margin-bottom: 5px;
+    @include flex-box(column, center, center);
   }
   @include respond-to(tablet) {
     @include flex-box(column, space-around, center);
@@ -78,7 +80,7 @@
 
 .trait-title {
   @include respond-to(mobile) {
-    width: 90%;
+    width: 97%;
     font-weight: 600;
     font-size: $font-size-section-title-mobile + 0.1rem;
   }

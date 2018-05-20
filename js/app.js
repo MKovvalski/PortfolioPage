@@ -204,12 +204,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const copyAlertTitle = document.querySelector(".alert-title");
   const copyAlertText = document.querySelector(".alert-text");
 
-  // classes names
-  const buttonDisabled = "button-hover-disabled";
-  const buttonEnabled = "button-hover-enabled";
-  const inputIncorrect = "form-input-name-focus-incorrect";
-  const inputCorrect = "form-input-name-focus-correct";
-
   mailDownLoad.addEventListener("click", () => {
     let range = document.createRange();
     range.selectNode(mailText);
@@ -220,13 +214,13 @@ document.addEventListener("DOMContentLoaded", () => {
       // move-in notification if email got copied
       copyAlertTitle.classList.add("alert-title-notification");
       copyAlertTitle.innerText = "notification";
-      copyAlertText.innerText = "You have successfully copied the email address";
+      copyAlertText.innerText = "You have successfully copied my email address";
       copyAlert.id = "move-in";
     } catch (err) {
       // move-in warning if email did not get copied
       copyAlertTitle.classList.add("alert-title-warning");
       copyAlertTitle.innerText = "warning";
-      copyAlertText.innerText = "Failed to copy email address";
+      copyAlertText.innerText = "Ups! Something went wrong. Try again";
       copyAlert.id = "move-in";
     }
     window.getSelection().removeAllRanges();
@@ -238,6 +232,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // enables/disables button on verification and changes button styles
 
+  // classes names
+  const buttonDisabled = "button-hover-disabled";
+  const buttonEnabled = "button-hover-enabled";
+  const inputIncorrect = "form-input-name-focus-incorrect";
+  const inputCorrect = "form-input-name-focus-correct";
+
+  // elements
   const inputName = document.querySelector(".form-input-name");
   const inputMail = document.querySelector(".form-input-email");
   const submitButton = document.querySelector(".contact-form-button");

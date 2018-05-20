@@ -1,6 +1,5 @@
 /*stylelint-disable*/
 
-
 .menu-burger {
   display: none;
 }
@@ -154,6 +153,7 @@
 // alert styling
 
 .copy-alert {
+  opacity: 0;
   position: fixed;
   top: 100px;
   right: 2000px;
