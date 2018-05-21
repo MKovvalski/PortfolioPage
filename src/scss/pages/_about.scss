@@ -10,7 +10,7 @@
 
 .short-description {
   width: 70%;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   @include flex-box(column, center, center);
 }
 
@@ -21,14 +21,14 @@
 
 .description {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 25px;
   color: $color-font-text;
   font-size: $font-size-base-text;
 }
 
 .main-traits {
   width: 96%;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   @include flex-box(row, space-between, flex-start);
 }
 
