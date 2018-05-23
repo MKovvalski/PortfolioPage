@@ -7,8 +7,9 @@
 
 .projects-wrapper {
   margin-top: 50px;
-  //margin-bottom: 60px;
+  margin-bottom: 20px;
   @include flex-box(row, space-around, flex-start);
+  flex-wrap: wrap;
 }
 
 .project {
@@ -17,6 +18,7 @@
   background-color: $color-component-background;
   border-radius: 5px;
   box-shadow: $box-shadow-resting;
+  margin-bottom: 30px;
   transition: all 0.5s;
   &:hover {
     box-shadow: $box-shadow-hover;
